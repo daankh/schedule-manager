@@ -9,7 +9,9 @@ class Supervisor extends Component {
     render() {
 
         return (
-            <h1>Supervisor</h1>
+            <div className="wrapper">
+                <h1>Supervisor</h1>
+            </div>
         )
     }
 }
