@@ -7,7 +7,10 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="wrapper">
-                    <h1>Nurse Schedule Manager</h1>
+                    <div className="logo">
+                        <i className="fas fa-user-nurse"></i>
+                    </div>
+                    <h1>Harmonogram pracy pielęgniarek</h1>
                 </div>
             </div>
         )

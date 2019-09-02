@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 import Header from './Components/Header'
-import Main from './Components/Main'
+import Login from './Components/Login'
 import Supervisor from './Components/Supervisor'
 import Regular from './Components/Regular'
 
@@ -22,14 +22,15 @@ class App extends Component {
                 <Header />
                 <HashRouter>
                     <>
-                        <ul>
+                        {/* <ul>
                             <NavLink to='/supervisor'>Supervisor</NavLink>
                             <NavLink to='/regular'>Regular</NavLink>
-                        </ul>
+                        </ul> */}
                         <Switch>
-                            <Route exact path='/' component={Main} />
+                            <Route exact path='/' component={Login} />
                             <Route path='/supervisor' component={Supervisor} />
                             <Route path='/regular' component={Regular} />
+                            <Route path="*" Component={Login} />
                         </Switch>
                     </>
                 </HashRouter>

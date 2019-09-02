@@ -1,0 +1,48 @@
+.login {
+    position: relative;
+    min-height: calc(100vh - 8rem);
+
+    .wrapper {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    &__form {
+        width: 30rem;
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, 0);
+
+        display: flex;
+        flex-direction: column;
+
+        input {
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 1rem;
+
+            outline: none;
+        
+        }
+
+        p, input:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        input[type="submit"] {
+            background-color: $color-bgc-header;
+            color: $color-font-header;
+            text-align: center;
+            
+            cursor: pointer;
+            transition: background-color .3s, color .3s;
+
+            &:hover {
+                background-color: darken($color-bgc-header, 4%);
+                color: $color-body;
+            }
+        }
+    }
+}
