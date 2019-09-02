@@ -13,6 +13,10 @@ import Login from './Components/Login'
 import Supervisor from './Components/Supervisor'
 import Regular from './Components/Regular'
 
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/regular'
+import '@fortawesome/fontawesome-free/js/brands'
 import './../sass/style.scss'; // adres do głównego pliku SASS
 
 class App extends Component {
@@ -22,10 +26,6 @@ class App extends Component {
                 <Header />
                 <HashRouter>
                     <>
-                        {/* <ul>
-                            <NavLink to='/supervisor'>Supervisor</NavLink>
-                            <NavLink to='/regular'>Regular</NavLink>
-                        </ul> */}
                         <Switch>
                             <Route exact path='/' component={Login} />
                             <Route path='/supervisor' component={Supervisor} />
