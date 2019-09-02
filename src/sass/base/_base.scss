@@ -1,22 +1,28 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-    font-family: $font-base;
+    font-family: $base-font;
+    font-size: $base-font-size;
 }
 
 body {
+    box-sizing: border-box;
     background-color: $color-body;
     color: $color-font;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 .wrapper {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
