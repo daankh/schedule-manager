@@ -1,31 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import './../sass/style.scss'; // adres do głównego pliku SASS
 
-// import img from '../images/image.jpg';
+const urlUsers = 'http://localhost:3000/users'
+const urlSchedules = 'http://localhost:3000/schedules'
+const urlScheduleUser = 'http://localhost:3000/scheduleUser'
 
-class App extends React.Component {
-
-    showAlert = (e) => {
-        alert(e.target.innerText);
-    }
-
-    render() {
-        return <h2 ref={el => this.h2 = el} onClick={this.showAlert}>To tylko test!</h2>
-    }
-
-    componentDidMount() {
-        console.log(this.h2);
-    }
+const getData = (url) => {
+    fetch(url).then(resp => {
+        const data = resp.text()
+        return data
+    }).then(data => {
+        console.log(data)
+    }).catch(err => (
+        console.log(err)
+    ))
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    ReactDOM.render(
-        <>
-            <App />
-        </>,
-        document.getElementById('app')
-    )
-})
+getData(urlScheduleUser)
+
+const App = () => (
+    <h1>sss</h1>
+)
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('app')
+)
 

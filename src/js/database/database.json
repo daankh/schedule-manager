@@ -1,0 +1,27 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Joanna",
+            "surname": "Krupa",
+            "position": "supervisior"
+        },
+        {
+            "id": 2,
+            "name": "Andrzej",
+            "surname": "Krupa",
+            "position": "regular"
+        }
+    ],
+    "schedules": [
+        {
+            "id": 1,
+            "month": "Setpember"
+        },
+        {
+            "id": 2,
+            "month": "October"
+        }
+    ],
+    "scheduleUser": []
+}
