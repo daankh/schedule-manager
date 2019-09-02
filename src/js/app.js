@@ -1,28 +1,42 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import {
+    HashRouter,
+    Route,
+    Link,
+    Switch,
+    NavLink,
+} from "react-router-dom";
+
+import Header from './Components/Header'
+import Main from './Components/Main'
+import Supervisor from './Components/Supervisor'
+import Regular from './Components/Regular'
 
 import './../sass/style.scss'; // adres do głównego pliku SASS
 
-const urlUsers = 'http://localhost:3000/users'
-const urlSchedules = 'http://localhost:3000/schedules'
-const urlScheduleUser = 'http://localhost:3000/scheduleUser'
-
-const getData = (url) => {
-    fetch(url).then(resp => {
-        const data = resp.text()
-        return data
-    }).then(data => {
-        console.log(data)
-    }).catch(err => (
-        console.log(err)
-    ))
+class App extends Component {
+    render() {
+        return (
+            <>
+                <Header />
+                <HashRouter>
+                    <>
+                        <ul>
+                            <NavLink to='/supervisor'>Supervisor</NavLink>
+                            <NavLink to='/regular'>Regular</NavLink>
+                        </ul>
+                        <Switch>
+                            <Route exact path='/' component={Main} />
+                            <Route path='/supervisor' component={Supervisor} />
+                            <Route path='/regular' component={Regular} />
+                        </Switch>
+                    </>
+                </HashRouter>
+            </>
+        )
+    }
 }
-
-getData(urlScheduleUser)
-
-const App = () => (
-    <h1>sss</h1>
-)
 
 ReactDOM.render(
     <App />,
