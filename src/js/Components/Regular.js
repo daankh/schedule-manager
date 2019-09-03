@@ -22,21 +22,24 @@ class Regular extends Component {
                         <nav className="navigation">
                             <ul>
                                 <li>
-                                    <NavLink className="link" activeStyle={active} exact to="/regular/mySchedule">Mój grafik</NavLink>
+                                    <NavLink className="link" activeStyle={active} exact to="/">Mój grafik</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" activeStyle={active} to="/regular/requests">Prośby</NavLink>
+                                    <NavLink className="link" activeStyle={active} to="/requests">Prośby</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" activeStyle={active} to="/regular/settings">Ustawienia</NavLink>
+                                    <NavLink className="link" activeStyle={active} to="/settings">Ustawienia</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" to="/">Wyloguj się</NavLink>
+                                    <NavLink className="link" to="/logout">Wyloguj się</NavLink>
                                 </li>
                             </ul>
                         </nav>
                         <Switch>
-
+                            <Route path='/' component={mySchedule} />
+                            <Route path='/requests' component={employersManaging} />
+                            <Route path='/settings' component={addSchedule} />
+                            <Route path='/logout' component={editSchedules} />
                         </Switch>
                     </HashRouter>
                 </div>

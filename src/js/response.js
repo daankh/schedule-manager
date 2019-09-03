@@ -19,5 +19,5 @@ const getData = (url) => {
     ))
 }
 
-getData(url)
+export default getData
 //--------------------------------------------

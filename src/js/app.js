@@ -8,10 +8,9 @@ import {
     NavLink,
 } from "react-router-dom";
 
+import { createBrowserHistory } from "history";
 import Header from './Components/Header'
 import Login from './Components/Login'
-import Supervisor from './Components/Supervisor'
-import Regular from './Components/Regular'
 
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
@@ -19,20 +18,43 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import './../sass/style.scss'; // adres do głównego pliku SASS
 
+import Supervisor from './Layouts/Supervisor';
+import EmployersManaging from './Components/SupervisorFunctionality/EmployersManaging';
+import MySchedule from './Components/CommonFunctionality/MySchedule';
+
+const history = createBrowserHistory();
+
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            userData: {}
+        }
+    }
+    onLoginSuccessHandler = (userData, callback) => {
+        this.setState({
+            userData
+        }, callback);
+    }
     render() {
         return (
             <>
                 <Header />
-                <HashRouter>
-                    <>
-                        <Switch>
-                            <Route exact path='/' component={Login} />
-                            <Route path='/supervisor' component={Supervisor} />
-                            <Route path='/regular' component={Regular} />
-                            <Route path="*" Component={Login} />
-                        </Switch>
-                    </>
+                <HashRouter history={history}>
+                    <Switch>
+                        <Route exact path='/' component={props => <Login {...props} onLoginSuccess={this.onLoginSuccessHandler} />} />
+                        <Route exact path="/supervisor" component={props => (
+                            <Supervisor userData={this.state.userData}>
+                                <MySchedule {...props} userData={this.state.userData} />
+                            </Supervisor>
+                        )} />
+                        <Route path="/supervisor/employersManaging" component={props => (
+                            <Supervisor userData={this.state.userData}>
+                                <EmployersManaging {...props} userData={this.state.userData} />
+                            </Supervisor>
+                        )} />
+                        <Route Component={Login} />
+                    </Switch>
                 </HashRouter>
             </>
         )
