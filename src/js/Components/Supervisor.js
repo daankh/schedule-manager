@@ -7,6 +7,11 @@ import {
     NavLink,
 } from "react-router-dom";
 
+import mySchedule from './CommonFunctionality/mySchedule'
+import employersManaging from './SupervisorFunctionality/employersManaging'
+import addSchedule from './SupervisorFunctionality/addSchedule'
+import editSchedules from './SupervisorFunctionality/editSchedules'
+
 class Supervisor extends Component {
     constructor(props) {
         super(props)
@@ -29,7 +34,7 @@ class Supervisor extends Component {
                                     <NavLink className="link" activeStyle={active} exact to="/supervisor/mySchedule">Mój grafik</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" activeStyle={active} to="/supervisor/employersManaging">Zarządanie pracownikami</NavLink>
+                                    <NavLink className="link" activeStyle={active} to="/supervisor/employersManaging">Zarządzanie pracownikami</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="link" activeStyle={active} to="/supervisor/addSchedule">Dodaj grafik</NavLink>
@@ -43,7 +48,10 @@ class Supervisor extends Component {
                             </ul>
                         </nav>
                         <Switch>
-
+                            <Route path='/supervisor/mySchedule' component={mySchedule} />
+                            <Route path='/supervisor/employersManaging' component={employersManaging} />
+                            <Route path='/supervisor/addSchedule' component={addSchedule} />
+                            <Route path='/supervisor/editSchedules' component={editSchedules} />
                         </Switch>
                     </HashRouter>
                 </div>
