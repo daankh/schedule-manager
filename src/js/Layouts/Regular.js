@@ -5,8 +5,9 @@ import {
 import Auth from './Auth';
 
 class Regular extends Component {
-    clearLocalStorage = () => {
+    logout = () => {
         localStorage.removeItem('userInfo')
+        this.props.onLogout()
     }
 
     render() {
@@ -30,7 +31,7 @@ class Regular extends Component {
                                     <NavLink className="link" activeStyle={active} to="/regular/settings">Ustawienia</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" to="/" onClick={this.clearLocalStorage}>Wyloguj się</NavLink>
+                                    <NavLink to="/" className="link" onClick={this.logout}>Wyloguj się</NavLink>
                                 </li>
                             </ul>
                         </nav>

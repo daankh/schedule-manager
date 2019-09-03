@@ -30,16 +30,14 @@ class Login extends Component {
 
         const user = JSON.parse(userJSON)
 
-        this.setState({
-            login: user.login,
-            id: user.id,
-            position: user.position,
-            validUser: user.validUser,
+        this.props.onLoginSuccess({
             validPassword: user.validPassword,
-            logged: user.logged
+            position: user.position,
+            id: user.id,
+            logged: true
         }, () => {
-            this.props.history.push(`/${user[0].position}`);
-        })
+            this.props.history.push(`/${user.position}`);
+        });
     }
 
     getLogin = (e) => {

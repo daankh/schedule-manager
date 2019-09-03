@@ -5,14 +5,16 @@ import {
 import Auth from './Auth';
 
 class Supervisor extends Component {
-    clearLocalStorage = () => {
+    logout = () => {
         localStorage.removeItem('userInfo')
+        this.props.onLogout()
     }
 
     render() {
         const active = {
             backgroundColor: "#FD7272",
         }
+
         return (
             <Auth userData={this.props.userData}>
                 <div className="supervisor" >
@@ -32,7 +34,7 @@ class Supervisor extends Component {
                                     <NavLink to="/supervisor/editSchedules" className="link" activeStyle={active}>Edycja grafików</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" to="/" onClick={this.clearLocalStorage}>Wyloguj się</NavLink>
+                                    <NavLink to="/" className="link" onClick={this.logout}>Wyloguj się</NavLink>
                                 </li>
                             </ul>
                         </nav>

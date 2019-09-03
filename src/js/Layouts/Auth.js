@@ -10,7 +10,7 @@ class Auth extends Component {
     }
 
     render() {
-        // console.log(history)
+        // console.log(history.location)
         return this.props.userData && this.props.userData.id ? (
             this.props.children
         ) : 'Brak dostępu'

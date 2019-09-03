@@ -42,6 +42,13 @@ class App extends Component {
             userData
         }, callback);
     }
+
+    onLogoutHandler = () => {
+        this.setState({
+            userData: {}
+        })
+    }
+
     render() {
         return (
             <>
@@ -50,43 +57,42 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/' component={props => <Login {...props} onLoginSuccess={this.onLoginSuccessHandler} />} />
                         <Route exact path="/supervisor" component={props => (
-                            <Supervisor userData={this.state.userData}>
+                            <Supervisor userData={this.state.userData} onLogout={this.onLogoutHandler}>
                                 <MySchedule {...props} userData={this.state.userData} />
                             </Supervisor>
                         )} />
                         <Route exact path="/supervisor/employersManaging" component={props => (
-                            <Supervisor userData={this.state.userData}>
+                            <Supervisor userData={this.state.userData} onLogout={this.onLogoutHandler}>
                                 <EmployersManaging {...props} userData={this.state.userData} />
                             </Supervisor>
                         )} />
                         <Route exact path="/supervisor/addSchedule" component={props => (
-                            <Supervisor userData={this.state.userData}>
+                            <Supervisor userData={this.state.userData} onLogout={this.onLogoutHandler}>
                                 <AddSchedule {...props} userData={this.state.userData} />
                             </Supervisor>
                         )} />
                         <Route exact path="/supervisor/editSchedules" component={props => (
-                            <Supervisor userData={this.state.userData}>
+                            <Supervisor userData={this.state.userData} onLogout={this.onLogoutHandler}>
                                 <EditSchedules {...props} userData={this.state.userData} />
                             </Supervisor>
                         )} />
 
                         <Route exact path="/regular" component={props => (
-                            <Regular userData={this.state.userData}>
+                            <Regular userData={this.state.userData} onLogout={this.onLogoutHandler}>
                                 <MySchedule {...props} userData={this.state.userData} />
                             </Regular>
                         )} />
                         <Route exact path="/regular/requests" component={props => (
-                            <Regular userData={this.state.userData}>
+                            <Regular userData={this.state.userData} onLogout={this.onLogoutHandler}>
                                 <Requestes {...props} userData={this.state.userData} />
                             </Regular>
                         )} />
                         <Route exact path="/regular/settings" component={props => (
-                            <Regular userData={this.state.userData}>
+                            <Regular userData={this.state.userData} onLogout={this.onLogoutHandler}>
                                 <Settings {...props} userData={this.state.userData} />
                             </Regular>
                         )} />
 
-                        <Route Component={Login} />
                     </Switch>
                 </HashRouter>
             </>
