@@ -5,6 +5,10 @@ import {
 import Auth from './Auth';
 
 class Regular extends Component {
+    clearLocalStorage = () => {
+        localStorage.removeItem('userInfo')
+    }
+
     render() {
         const active = {
             backgroundColor: "#FD7272",
@@ -26,7 +30,7 @@ class Regular extends Component {
                                     <NavLink className="link" activeStyle={active} to="/regular/settings">Ustawienia</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" to="/">Wyloguj się</NavLink>
+                                    <NavLink className="link" to="/" onClick={this.clearLocalStorage}>Wyloguj się</NavLink>
                                 </li>
                             </ul>
                         </nav>

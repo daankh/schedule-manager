@@ -6,17 +6,39 @@ class Login extends Component {
         super(props)
         this.state = {
             login: "",
+            id: "",
             password: "",
             position: "",
             validUser: false,
             validPassword: false,
-            id: "",
+            logged: false
         }
     }
 
     setValue = (e) => {
         this.setState({
             [e.target.name]: e.target.value
+        })
+    }
+
+    tryToLogFromLocalStorage = () => {
+        const userJSON = localStorage.getItem("userInfo")
+
+        if (!userJSON) {
+            return
+        }
+
+        const user = JSON.parse(userJSON)
+
+        this.setState({
+            login: user.login,
+            id: user.id,
+            position: user.position,
+            validUser: user.validUser,
+            validPassword: user.validPassword,
+            logged: user.logged
+        }, () => {
+            this.props.history.push(`/${user[0].position}`);
         })
     }
 
@@ -45,10 +67,23 @@ class Login extends Component {
                     this.props.onLoginSuccess({
                         validPassword: true,
                         position: user[0].position,
-                        id: user[0].id
+                        id: user[0].id,
+                        logged: true
                     }, () => {
                         this.props.history.push(`/${user[0].position}`);
                     });
+
+                    const localData = {
+                        login: this.state.login,
+                        id: user[0].id,
+                        position: user[0].position,
+                        validUser: true,
+                        validPassword: true,
+                        logged: true
+                    }
+
+                    localStorage.setItem("userInfo", JSON.stringify(localData))
+
                     console.log('you pass')
                 } else {
                     console.log('wrong password')
@@ -58,6 +93,10 @@ class Login extends Component {
             console.log(err)
         ))
 
+    }
+
+    componentDidMount() {
+        this.tryToLogFromLocalStorage()
     }
 
     render() {
