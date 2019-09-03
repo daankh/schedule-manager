@@ -4,28 +4,26 @@ import {
 } from "react-router-dom";
 import Auth from './Auth';
 
-class Supervisor extends Component {
+class Regular extends Component {
     render() {
         const active = {
             backgroundColor: "#FD7272",
         }
+
         return (
             <Auth userData={this.props.userData}>
-                <div className="supervisor" >
+                <div className="regular" >
                     <div className="wrapper">
                         <nav className="navigation">
                             <ul>
                                 <li>
-                                    <NavLink exact to={`/supervisor`} className="link" activeStyle={active}>Mój grafik</NavLink>
+                                    <NavLink className="link" activeStyle={active} exact to="/regular">Mój grafik</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/supervisor/employersManaging" className="link" activeStyle={active}>Zarządzanie pracownikami</NavLink>
+                                    <NavLink className="link" activeStyle={active} to="/regular/requests">Prośby</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/supervisor/addSchedule" className="link" activeStyle={active}>Dodaj grafik</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/supervisor/editSchedules" className="link" activeStyle={active}>Edycja grafików</NavLink>
+                                    <NavLink className="link" activeStyle={active} to="/regular/settings">Ustawienia</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="link" to="/">Wyloguj się</NavLink>
@@ -36,8 +34,9 @@ class Supervisor extends Component {
                     </div>
                 </div>
             </Auth>
+
         )
     }
 }
 
-export default Supervisor
+export default Regular

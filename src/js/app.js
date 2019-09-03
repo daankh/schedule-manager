@@ -21,6 +21,12 @@ import './../sass/style.scss'; // adres do głównego pliku SASS
 import Supervisor from './Layouts/Supervisor';
 import EmployersManaging from './Components/SupervisorFunctionality/EmployersManaging';
 import MySchedule from './Components/CommonFunctionality/MySchedule';
+import AddSchedule from './Components/SupervisorFunctionality/AddSchedule';
+import EditSchedules from './Components/SupervisorFunctionality/EditSchedules'
+
+import Regular from './Layouts/Regular'
+import Requestes from './Components/RegularFunctionality/Requests'
+import Settings from './Components/CommonFunctionality/Settings'
 
 const history = createBrowserHistory();
 
@@ -48,11 +54,38 @@ class App extends Component {
                                 <MySchedule {...props} userData={this.state.userData} />
                             </Supervisor>
                         )} />
-                        <Route path="/supervisor/employersManaging" component={props => (
+                        <Route exact path="/supervisor/employersManaging" component={props => (
                             <Supervisor userData={this.state.userData}>
                                 <EmployersManaging {...props} userData={this.state.userData} />
                             </Supervisor>
                         )} />
+                        <Route exact path="/supervisor/addSchedule" component={props => (
+                            <Supervisor userData={this.state.userData}>
+                                <AddSchedule {...props} userData={this.state.userData} />
+                            </Supervisor>
+                        )} />
+                        <Route exact path="/supervisor/editSchedules" component={props => (
+                            <Supervisor userData={this.state.userData}>
+                                <EditSchedules {...props} userData={this.state.userData} />
+                            </Supervisor>
+                        )} />
+
+                        <Route exact path="/regular" component={props => (
+                            <Regular userData={this.state.userData}>
+                                <MySchedule {...props} userData={this.state.userData} />
+                            </Regular>
+                        )} />
+                        <Route exact path="/regular/requests" component={props => (
+                            <Regular userData={this.state.userData}>
+                                <Requestes {...props} userData={this.state.userData} />
+                            </Regular>
+                        )} />
+                        <Route exact path="/regular/settings" component={props => (
+                            <Regular userData={this.state.userData}>
+                                <Settings {...props} userData={this.state.userData} />
+                            </Regular>
+                        )} />
+
                         <Route Component={Login} />
                     </Switch>
                 </HashRouter>
