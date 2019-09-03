@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class mySchedule extends Component {
+class MySchedule extends Component {
 
     render() {
 
@@ -10,4 +10,4 @@ class mySchedule extends Component {
     }
 }
 
-export default mySchedule
+export default MySchedule

@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 import {
-    HashRouter,
-    Route,
-    Link,
-    Switch,
     NavLink,
 } from "react-router-dom";
+import Auth from './Auth';
 
 class Regular extends Component {
+    logout = () => {
+        localStorage.removeItem('userInfo')
+        this.props.onLogout()
+    }
 
     render() {
-
         const active = {
             backgroundColor: "#FD7272",
         }
 
         return (
-            <div className="regular" >
-                <div className="wrapper">
-                    <HashRouter>
+            <Auth userData={this.props.userData}>
+                <div className="regular" >
+                    <div className="wrapper">
                         <nav className="navigation">
                             <ul>
                                 <li>
-                                    <NavLink className="link" activeStyle={active} exact to="/regular/mySchedule">Mój grafik</NavLink>
+                                    <NavLink className="link" activeStyle={active} exact to="/regular">Mój grafik</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="link" activeStyle={active} to="/regular/requests">Prośby</NavLink>
@@ -31,16 +31,14 @@ class Regular extends Component {
                                     <NavLink className="link" activeStyle={active} to="/regular/settings">Ustawienia</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="link" to="/">Wyloguj się</NavLink>
+                                    <NavLink to="/" className="link" onClick={this.logout}>Wyloguj się</NavLink>
                                 </li>
                             </ul>
                         </nav>
-                        <Switch>
-
-                        </Switch>
-                    </HashRouter>
+                        {this.props.children}
+                    </div>
                 </div>
-            </div>
+            </Auth>
 
         )
     }

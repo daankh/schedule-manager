@@ -2,14 +2,18 @@
     "users": [
         {
             "id": 1,
+            "login": "jk",
+            "password": "123",
             "name": "Joanna",
             "surname": "Krupa",
-            "position": "supervisior"
+            "position": "supervisor"
         },
         {
             "id": 2,
-            "name": "Andrzej",
-            "surname": "Krupa",
+            "name": "Zuzanna",
+            "login": "zk",
+            "password": "123",
+            "surname": "Kowal",
             "position": "regular"
         }
     ],
