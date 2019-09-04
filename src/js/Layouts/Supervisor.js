@@ -34,6 +34,9 @@ class Supervisor extends Component {
                                     <NavLink to="/supervisor/editSchedules" className="link" activeStyle={active}>Edycja grafików</NavLink>
                                 </li>
                                 <li>
+                                    <NavLink to="/supervisor/settings" className="link" activeStyle={active}>Ustawienia</NavLink>
+                                </li>
+                                <li>
                                     <NavLink to="/" className="link" onClick={this.logout}>Wyloguj się</NavLink>
                                 </li>
                             </ul>

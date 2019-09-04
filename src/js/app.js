@@ -76,6 +76,11 @@ class App extends Component {
                                 <EditSchedules {...props} userData={this.state.userData} />
                             </Supervisor>
                         )} />
+                        <Route exact path="/supervisor/settings" component={props => (
+                            <Supervisor userData={this.state.userData} onLogout={this.onLogoutHandler}>
+                                <Settings {...props} userData={this.state.userData} />
+                            </Supervisor>
+                        )} />
 
                         <Route exact path="/regular" component={props => (
                             <Regular userData={this.state.userData} onLogout={this.onLogoutHandler}>
