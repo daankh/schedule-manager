@@ -5,12 +5,19 @@ import {
 import Auth from './Auth';
 
 class Supervisor extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {}
+    }
+
     logout = () => {
         localStorage.removeItem('userInfo')
         this.props.onLogout()
     }
 
     render() {
+
         const active = {
             backgroundColor: "#FD7272",
         }

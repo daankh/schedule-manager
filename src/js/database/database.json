@@ -1,31 +1,51 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "login": "jk",
-            "password": "123",
-            "name": "Joanna",
-            "surname": "Krupa",
-            "position": "supervisor"
-        },
-        {
-            "id": 2,
-            "name": "Zuzanna",
-            "login": "zk",
-            "password": "123",
-            "surname": "Kowal",
-            "position": "regular"
-        }
-    ],
-    "schedules": [
-        {
-            "id": 1,
-            "month": "Setpember"
-        },
-        {
-            "id": 2,
-            "month": "October"
-        }
-    ],
-    "scheduleUser": []
+  "users": [
+    {
+      "id": 1,
+      "login": "admin",
+      "password": "admin",
+      "name": "Prime",
+      "surname": "Admin",
+      "position": "supervisor",
+      "time": 1
+    },
+    {
+      "login": "ko@gmail.com",
+      "password": "1234",
+      "name": "Katarzyna",
+      "surname": "Oddziałowa",
+      "position": "supervisor",
+      "time": 1,
+      "id": 2
+    },
+    {
+      "login": "kj@gmail.com",
+      "password": "1234",
+      "name": "Katarzyna",
+      "surname": "Jarosz",
+      "position": "regular",
+      "time": 0.75,
+      "id": 3
+    },
+    {
+      "login": "ab@gmail.com",
+      "password": "1234",
+      "name": "Anna",
+      "surname": "Buch",
+      "position": "regular",
+      "time": 1,
+      "id": 4
+    }
+  ],
+  "schedules": [
+    {
+      "id": 1,
+      "month": "Setpember"
+    },
+    {
+      "id": 2,
+      "month": "October"
+    }
+  ],
+  "scheduleUser": []
 }
