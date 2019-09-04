@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AddEmployer from './AddEmployer'
+import RemoveEmployer from './RemoveEmployer'
 
 
 
@@ -14,6 +15,10 @@ class employersManaging extends Component {
     }
 
     componentDidMount() {
+        this.updateUsersHandler()
+    }
+
+    updateUsersHandler = () => {
         fetch(this.state.urlUsers, {
             method: 'GET'
         }).then(resp => {
@@ -34,7 +39,8 @@ class employersManaging extends Component {
         return (
             <div className="employersManaging">
                 <div className="wrapper">
-                    <AddEmployer users={this.state.users} urlUsers={this.state.urlUsers} />
+                    <AddEmployer users={this.state.users} urlUsers={this.state.urlUsers} updateUsers={this.updateUsersHandler} />
+                    <RemoveEmployer users={this.state.users} urlUsers={this.state.urlUsers} updateUsers={this.updateUsersHandler} />
                 </div>
             </div>
         )

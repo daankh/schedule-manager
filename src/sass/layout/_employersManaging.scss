@@ -79,9 +79,29 @@
         }
     }
 
-    .addEmployer {
+    .addEmployer,
+    .removeEmployer {
         background-color: #CAD3C8;
         padding: 2rem;
         border-radius: 2rem;
+    }
+
+    .addEmployer{
+        margin-right: 2rem;
+    }
+
+    .removeEmployer {
+        width: 30rem;
+
+        label {
+            span {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            select {
+                width: 100%;
+            }
+        }
     }
 }

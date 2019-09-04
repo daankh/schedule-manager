@@ -7,7 +7,8 @@
       "name": "Prime",
       "surname": "Admin",
       "position": "supervisor",
-      "time": 1
+      "time": 1,
+      "active": true
     },
     {
       "login": "ko@gmail.com",
@@ -16,7 +17,8 @@
       "surname": "Oddziałowa",
       "position": "supervisor",
       "time": 1,
-      "id": 2
+      "id": 2,
+      "active": true
     },
     {
       "login": "kj@gmail.com",
@@ -25,7 +27,8 @@
       "surname": "Jarosz",
       "position": "regular",
       "time": 0.75,
-      "id": 3
+      "id": 3,
+      "active": true
     },
     {
       "login": "ab@gmail.com",
@@ -34,7 +37,28 @@
       "surname": "Buch",
       "position": "regular",
       "time": 1,
-      "id": 4
+      "id": 4,
+      "active": true
+    },
+    {
+      "login": "a@a.com",
+      "password": "1234",
+      "name": "aaa",
+      "surname": "aaa",
+      "position": "regular",
+      "time": 1,
+      "active": false,
+      "id": 5
+    },
+    {
+      "login": "zm@wp.pl",
+      "password": "1234",
+      "name": "Zuzanna",
+      "surname": "Miłosz",
+      "position": "regular",
+      "time": 1,
+      "active": false,
+      "id": 6
     }
   ],
   "schedules": [

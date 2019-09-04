@@ -40,6 +40,7 @@ class AddEmployer extends Component {
                 "surname": this.state.surname,
                 "position": this.state.position,
                 "time": Number(this.state.time),
+                "active": true,
             }
 
             fetch(this.props.urlUsers, {
@@ -62,6 +63,8 @@ class AddEmployer extends Component {
                     password1: "",
                     password2: ""
                 })
+
+                this.props.updateUsers()
             }).catch(err => console.log(err, 'nie dodano użytkownika '))
         }
 

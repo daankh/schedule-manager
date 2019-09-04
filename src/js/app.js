@@ -56,9 +56,6 @@ class App extends Component {
     }
 
     componentDidMount() {
-        // this.getDataUsers()
-        // this.getDataSchedules()
-        // this.getDataUserSchedule()
     }
 
     render() {
@@ -72,9 +69,6 @@ class App extends Component {
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>
                                 <MySchedule {...props} userData={this.state.userData}
-                                // users={this.state.users}
-                                // schedules={this.state.schedules}
-                                // userSchedule={this.state.userSchedule}
                                 />
                             </Supervisor>
                         )} />
@@ -82,9 +76,6 @@ class App extends Component {
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>
                                 <EmployersManaging {...props} userData={this.state.userData}
-                                // users={this.state.users}
-                                // schedules={this.state.schedules}
-                                // userSchedule={this.state.userSchedule}
                                 />
                             </Supervisor>
                         )} />
@@ -92,9 +83,6 @@ class App extends Component {
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>
                                 <AddSchedule {...props} userData={this.state.userData}
-                                // users={this.state.users}
-                                // schedules={this.state.schedules}
-                                // userSchedule={this.state.userSchedule}
                                 />
                             </Supervisor>
                         )} />
@@ -102,17 +90,11 @@ class App extends Component {
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>
                                 <EditSchedules {...props} userData={this.state.userData}
-                                // users={this.state.users}
-                                // schedules={this.state.schedules}
-                                // userSchedule={this.state.userSchedule}
                                 />
                             </Supervisor>
                         )} />
                         <Route exact path="/supervisor/settings" component={props => (
                             <Supervisor userData={this.state.userData}
-                                users={this.state.users}
-                                schedules={this.state.schedules}
-                                userSchedule={this.state.userSchedule}
                                 onLogout={this.onLogoutHandler}>
                                 <Settings {...props} userData={this.state.userData} />
                             </Supervisor>
