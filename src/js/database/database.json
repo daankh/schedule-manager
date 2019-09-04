@@ -57,18 +57,275 @@
       "surname": "Miłosz",
       "position": "regular",
       "time": 1,
-      "active": false,
+      "active": true,
       "id": 6
+    },
+    {
+      "login": "zw@wp.pl",
+      "password": "1234",
+      "name": "Zuzanna",
+      "surname": "Wesoła",
+      "position": "regular",
+      "time": 0.5,
+      "active": true,
+      "id": 7
     }
   ],
   "schedules": [
     {
-      "id": 1,
-      "month": "Setpember"
-    },
-    {
-      "id": 2,
-      "month": "October"
+      "month": 9,
+      "year": 2019,
+      "day": [
+        {
+          "day": 1,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 2,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 3,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 4,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 5,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 6,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 7,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 8,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 9,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 10,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 11,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 12,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 13,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 14,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 15,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 16,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 17,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 18,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 19,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 20,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 21,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 22,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 23,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 24,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 25,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 26,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 27,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 28,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 29,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 30,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        },
+        {
+          "day": 31,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": []
+          }
+        }
+      ],
+      "id": 1
     }
   ],
   "scheduleUser": []
