@@ -40,6 +40,7 @@ class AddEmployer extends Component {
                 "surname": this.state.surname,
                 "position": this.state.position,
                 "time": Number(this.state.time),
+                "phone": "",
                 "active": true,
             }
 
