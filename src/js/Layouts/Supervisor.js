@@ -35,10 +35,7 @@ class Supervisor extends Component {
                                     <NavLink to="/supervisor/employersManaging" className="link" activeStyle={active}>Zarządzanie pracownikami</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/supervisor/addSchedule" className="link" activeStyle={active}>Dodaj grafik</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/supervisor/editSchedules" className="link" activeStyle={active}>Edycja grafików</NavLink>
+                                    <NavLink to="/supervisor/schedules" className="link" activeStyle={active}>Harmonogramy</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="/supervisor/settings" className="link" activeStyle={active}>Ustawienia</NavLink>

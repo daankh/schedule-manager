@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class AddSchedule extends Component {
+class AddSchedules extends Component {
 
     render() {
 
         return (
-            <h1>addSchedule</h1>
+            <h1>addSchedules</h1>
         )
     }
 }
 
-export default AddSchedule
+export default AddSchedules

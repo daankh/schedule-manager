@@ -21,8 +21,9 @@ import './../sass/style.scss'; // adres do głównego pliku SASS
 import Supervisor from './Layouts/Supervisor';
 import EmployersManaging from './Components/SupervisorFunctionality/EmployersManaging';
 import MySchedule from './Components/CommonFunctionality/MySchedule';
-import AddSchedule from './Components/SupervisorFunctionality/AddSchedule';
-import EditSchedules from './Components/SupervisorFunctionality/EditSchedules'
+import Schedules from './Components/SupervisorFunctionality/Schedules'
+// import AddSchedule from './Components/SupervisorFunctionality/AddSchedule';
+// import EditSchedules from './Components/SupervisorFunctionality/EditSchedules'
 
 import Regular from './Layouts/Regular'
 import Requestes from './Components/RegularFunctionality/Requests'
@@ -79,20 +80,27 @@ class App extends Component {
                                 />
                             </Supervisor>
                         )} />
-                        <Route exact path="/supervisor/addSchedule" component={props => (
+                        <Route exact path="/supervisor/schedules" component={props => (
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>
-                                <AddSchedule {...props} userData={this.state.userData}
+                                <Schedules {...props} userData={this.state.userData}
                                 />
                             </Supervisor>
                         )} />
-                        <Route exact path="/supervisor/editSchedules" component={props => (
+                        {/* <Route exact path="/supervisor/editSchedules" component={props => (
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>
                                 <EditSchedules {...props} userData={this.state.userData}
                                 />
                             </Supervisor>
                         )} />
+                            <Route exact path="/supervisor/addSchedule" component={props => (
+                            <Supervisor userData={this.state.userData}
+                                onLogout={this.onLogoutHandler}>
+                                <AddSchedule {...props} userData={this.state.userData}
+                                />
+                            </Supervisor>
+                        )} /> */}
                         <Route exact path="/supervisor/settings" component={props => (
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>
