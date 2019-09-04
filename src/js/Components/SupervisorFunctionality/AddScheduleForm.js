@@ -48,6 +48,10 @@ class AddScheduleForm extends Component {
                     from7to15: [],
                     from7to19: [],
                     from19to7: [],
+                    leave: [],
+                    sickLeave: [],
+                    childCare: [],
+                    training: []
                 }
             })
         }

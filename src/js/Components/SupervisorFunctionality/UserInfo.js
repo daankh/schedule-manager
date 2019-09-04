@@ -8,6 +8,7 @@ class UserInfo extends Component {
             employer: "",
             name: "",
             surname: "",
+            phone: "",
             login: "",
             time: "",
             position: "",
@@ -15,16 +16,34 @@ class UserInfo extends Component {
     }
 
     changeHandler = (e) => {
-        const user = [...this.props.users].filter(user => user.id === Number(e.target.value))[0]
+        const user = this.props.users.filter(user => user.id === Number(e.target.value))[0]
 
         this.setState({
             [e.target.name]: e.target.value,
             name: user.name,
             surname: user.surname,
             login: user.login,
+            phone: user.phone,
             time: user.time,
             position: user.position === 'regular' ? 'pielęgniarka' : "inne"
         })
+    }
+
+    componentDidMount() {
+        //default user
+        const user = this.props.users
+        console.log(this.props.users)
+        // const user = filteredUsers[0]
+
+        // this.setState({
+        //     employer: user.id,
+        //     name: user.name,
+        //     surname: user.surname,
+        //     login: user.login,
+        //     phone: user.phone,
+        //     time: user.time,
+        //     position: user.position === 'regular' ? 'pielęgniarka' : "inne"
+        // })
     }
 
     render() {
@@ -54,6 +73,11 @@ class UserInfo extends Component {
                             </tr>
                             <tr>
                                 <th>Stanowisko:</th><td>{this.state.position}</td>
+                            </tr>
+                            <tr>
+                                <th>telefon:</th><td>{
+                                    this.state.phone ? this.state.phone : 'nie podano'
+                                }</td>
                             </tr>
                             <tr>
                                 <th>e-mail:</th><td>{this.state.login}</td>
