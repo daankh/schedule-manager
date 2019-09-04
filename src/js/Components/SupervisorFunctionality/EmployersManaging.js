@@ -15,10 +15,6 @@ class employersManaging extends Component {
         }
     }
 
-    componentDidMount() {
-        this.updateUsersHandler()
-    }
-
     updateUsersHandler = () => {
         fetch(this.state.urlUsers, {
             method: 'GET'
@@ -34,6 +30,10 @@ class employersManaging extends Component {
         }).catch(err => (
             console.log(err)
         ))
+    }
+
+    componentDidMount() {
+        this.updateUsersHandler()
     }
 
     render() {

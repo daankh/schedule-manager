@@ -1,0 +1,55 @@
+.schedules {
+    
+    font-size: 1.8rem;
+
+    
+
+    * {
+        color: inherit;
+        font-size: inherit
+    }
+
+    .wrapper {
+        
+    }
+
+    h2 {
+        margin: 1.6rem 0;
+       font-size: 3rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-bgc-form;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        color:$color-font-form;
+
+        select {
+            margin: 0 1rem;
+            outline: none;
+            background-color: #fff;
+            padding: .4rem 1.5rem;
+        }
+
+        input[type="submit"] {
+            width: 10rem;
+            padding: 1rem 1.6rem;
+            border: none;
+            border-radius: 1rem;
+            background-color: $color-bgc-header;
+            color: $color-font-header;
+            text-align: center;
+            
+            cursor: pointer;
+            transition: background-color .3s, color .3s;
+
+            &:hover {
+                background-color: darken($color-bgc-header, 4%);
+                color:$color-font-form;
+            }
+        }
+    }
+}
