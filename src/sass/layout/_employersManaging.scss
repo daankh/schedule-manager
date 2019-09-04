@@ -1,0 +1,127 @@
+.employersManaging {
+    font-size: 1.8rem;
+
+    color:$color-font-form;
+
+    * {
+        color: inherit
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+     
+        label {
+            margin-bottom: 1rem;
+        }
+
+        label span {
+            display: inline-block;
+            width: 14rem;
+            text-align: right;
+            margin-right: 2rem;
+        }
+
+        input {
+            width: 20rem;
+            padding: .4rem 1.5rem;
+            font-size: 1.8rem;
+            outline: none;
+           
+            border-radius: 1rem;
+        }
+
+        input:not([type="submit"]) {
+            border: 2px solid transparent;
+            transition: border-color .3s;
+
+            &:focus {
+                border: 2px solid $color-bgc-header;
+            }
+        }
+
+        input[type="submit"] {
+            align-self: center;
+            width: 100%;
+            padding: 1rem 1.6rem;
+            border: none;
+            background-color: $color-bgc-header;
+            color: $color-font-header;
+            text-align: center;
+            
+            cursor: pointer;
+            transition: background-color .3s, color .3s;
+
+            &:hover {
+                background-color: darken($color-bgc-header, 4%);
+                color:$color-font-form;
+            }
+        }
+
+        select {
+            width: 20rem;
+            font-size: 1.8rem;
+            padding: .4rem 1.5rem;
+            border-radius: 1rem;
+
+            outline: none;
+            background-color: #fff;
+        }
+    }
+
+    .addEmployer,
+    .userInfo,
+    .removeEmployer {
+        background-color: #CAD3C8;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .addEmployer,
+    .userInfo{
+        margin-right: 2rem;
+    }
+
+    .userInfo {
+        select {
+            width: 100%;
+        }
+
+        table {
+            th {
+                width:50%;
+                padding-right: 1rem;
+                text-align: right;
+            }
+
+            td {
+                width: 50%;
+            }
+        }
+    }
+
+    .removeEmployer {
+        width: 30rem;
+
+        label {
+            span {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            select {
+                width: 100%;
+            }
+        }
+    }
+}
