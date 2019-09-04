@@ -80,14 +80,34 @@
     }
 
     .addEmployer,
+    .userInfo,
     .removeEmployer {
         background-color: #CAD3C8;
         padding: 2rem;
         border-radius: 2rem;
     }
 
-    .addEmployer{
+    .addEmployer,
+    .userInfo{
         margin-right: 2rem;
+    }
+
+    .userInfo {
+        select {
+            width: 100%;
+        }
+
+        table {
+            th {
+                width:50%;
+                padding-right: 1rem;
+                text-align: right;
+            }
+
+            td {
+                width: 50%;
+            }
+        }
     }
 
     .removeEmployer {

@@ -112,7 +112,7 @@ class AddEmployer extends Component {
                         <span>Powtórz hasło</span>
                         <input name="password2" type="password" value={this.state.password2} onChange={this.changeHandler} />
                     </label>
-                    <input type="submit" value="dodaj pracownika" />
+                    <input type="submit" value="Dodaj pracownika" />
                 </form>
             </div>
         )
