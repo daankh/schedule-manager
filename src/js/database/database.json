@@ -8,7 +8,6 @@
       "surname": "Admin",
       "position": "supervisor",
       "time": 1,
-      "phone": "",
       "active": true
     },
     {
@@ -19,7 +18,6 @@
       "position": "supervisor",
       "time": 1,
       "id": 2,
-      "phone": "",
       "active": true
     },
     {
@@ -30,7 +28,6 @@
       "position": "regular",
       "time": 0.75,
       "id": 3,
-      "phone": "",
       "active": true
     },
     {
@@ -41,7 +38,6 @@
       "position": "regular",
       "time": 1,
       "id": 4,
-      "phone": "",
       "active": true
     },
     {
@@ -51,7 +47,6 @@
       "surname": "aaa",
       "position": "regular",
       "time": 1,
-      "phone": "",
       "active": false,
       "id": 5
     },
@@ -62,7 +57,6 @@
       "surname": "Miłosz",
       "position": "regular",
       "time": 1,
-      "phone": "568 547 414",
       "active": true,
       "id": 6
     },
@@ -73,20 +67,8 @@
       "surname": "Wesoła",
       "position": "regular",
       "time": 0.5,
-      "phone": "",
       "active": true,
       "id": 7
-    },
-    {
-      "login": "mz@gmail.com",
-      "password": "1234",
-      "name": "Mścisława",
-      "surname": "Ząbek",
-      "position": "regular",
-      "time": 1,
-      "phone": "",
-      "active": true,
-      "id": 8
     }
   ],
   "schedules": [],
