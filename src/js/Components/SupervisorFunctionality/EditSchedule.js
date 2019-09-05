@@ -26,7 +26,7 @@ class EditSchedule extends Component {
                 <div className="wrapper">
                     <div className="row editSchedule__header">
                         <h2>Edycja grafiku za miesiąc ...</h2>
-                        <button className="delete">Odrzuć zmiany</button>
+                        <button className="delete" onClick={this.props.hideEditSchedule}>Odrzuć zmiany</button>
                         <button className="save">Zapisz</button>
                     </div>
                     <div className="row">

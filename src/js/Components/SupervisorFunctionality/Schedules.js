@@ -93,6 +93,7 @@ class Schedules extends Component {
                     <AddScheduleForm
                         urlSchedules={this.state.urlSchedules}
                         updateSchedules={this.updateSchedulesHandler}
+                        updateSchedulesUsers={this.getUserSchedule}
                         month={this.state.selectedMonth}
                         year={this.state.selectedYear}
                         urlScheduleUser={this.state.urlScheduleUser}
@@ -103,6 +104,7 @@ class Schedules extends Component {
                         urlScheduleUser={this.state.urlScheduleUser}
                         urlUsers={this.state.urlUsers}
                         updateSchedules={this.updateSchedulesHandler}
+                        updateSchedulesUsers={this.getUserSchedule}
                         getUsers={this.getUsers}
                         getUserSchedule={this.getUserSchedule}
                         getSchedules={this.updateSchedulesHandler}

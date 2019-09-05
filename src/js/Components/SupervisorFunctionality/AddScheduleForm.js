@@ -128,6 +128,7 @@ class AddScheduleForm extends Component {
             }).then(data => {
                 console.log('Pomyślnie dodano harmonogram')
                 this.props.updateSchedules()
+                this.props.updateSchedulesUsers()
             }).catch(err => console.log(err, 'nie dodano harmonogramu '))
         }).catch(err => console.log(err, 'nie dodano harmonogramu '))
 

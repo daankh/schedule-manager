@@ -21,6 +21,13 @@ class SchedulesList extends Component {
         })
     }
 
+    hideEditSchedule = () => {
+        this.setState({
+            showEditSchedule: false,
+            scheduleId: "",
+        })
+    }
+
     removeSchedule = (e) => {
         const id = e.target.dataset.id
 
@@ -42,6 +49,7 @@ class SchedulesList extends Component {
             }).then(() => {
                 console.log('Pomyślnie usunięto harmonogram')
                 this.props.updateSchedules()
+                this.props.updateSchedulesUsers()
             }).catch(err => console.log(err, 'nie usunięto harmonogramu '))
 
         }).catch(err => console.log(err, 'nie usunięto harmonogramu '))
@@ -78,6 +86,7 @@ class SchedulesList extends Component {
                         schedules={this.props.schedules}
                         scheduleUsers={this.props.scheduleUsers}
                         users={this.props.users}
+                        hideEditSchedule={this.hideEditSchedule}
                     />
                 </>
             )
