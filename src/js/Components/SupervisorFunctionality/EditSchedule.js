@@ -8,16 +8,42 @@ class EditSchedule extends Component {
             schedule: this.props.schedules.filter(schedule => schedule.id == this.props.scheduleId)[0],
             scheduleUsers: this.props.scheduleUsers.filter(schedule => schedule.id == this.props.scheduleId)[0],
             users: this.props.users,
+
+            days: this.props.schedules.filter(schedule => schedule.id == this.props.scheduleId)[0].day,
+
+            dragUserId: null,
         }
     }
 
-    componentDidMount() {
+    dragOver = (e) => {
+        e.preventDefault()
+    }
 
+    dragStart = (e, userId) => {
+        //to co się dzeje na początku
+
+        this.setState({
+            dragUserId: userId
+        })
+    }
+
+    drop = (e, dayNumber) => {
+        //to co się dzieje na końcu
+
+        const destArr = e.target.getAttribute("name")
+
+        const daysCopy = [...this.state.days]
+        daysCopy[dayNumber - 1].employers[destArr].push(this.state.dragUserId)
+
+        this.setState({
+            days: daysCopy,
+            dragUserId: null,
+        })
     }
 
     drag = (e) => {
-        console.log('lalla')
-        console.log(e.target)
+        //to co się dzieje w trakcie
+        // console.log(e.target)
     }
 
     render() {
@@ -29,38 +55,109 @@ class EditSchedule extends Component {
             <div className="day" key={element.day}>
                 <h3 className="day__heading"><span>{element.day}</span></h3>
                 <h4>Zmiana R</h4>
-                <ul className="rShift" onDragLeave={this.drag}>
+                <ul name="from7to15" className="rShift" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                    {
+                        this.state.days[element.day - 1].employers["from7to15"].map(usId => {
 
+                            const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
+
+                            return (
+                                <li key={usId} name="from7to15">{user.name} {user.surname}</li>
+                            )
+                        })
+                    }
                 </ul>
                 <h4>Zmiana D</h4>
-                <ul className="dShift" onDragLeave={this.drag}>
+                <ul name="from7to19" className="dShift" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                    {
+                        this.state.days[element.day - 1].employers["from7to19"].map(usId => {
 
+                            const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
+
+                            return (
+                                <li key={usId} name="from7to19">{user.name} {user.surname}</li>
+                            )
+                        })
+                    }
                 </ul>
                 <h4>Zmiana N</h4>
-                <ul className="dShift" onDragLeave={this.drag}>
+                <ul name="from19to7" className="dShift" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                    {
+                        this.state.days[element.day - 1].employers["from19to7"].map(usId => {
 
+                            const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
+
+                            return (
+                                <li key={usId} name="from19to7">{user.name} {user.surname}</li>
+                            )
+                        })
+                    }
                 </ul>
                 <h4>Szkolenie</h4>
-                <ul className="training" onDragLeave={this.drag}>
+                <ul name="training" className="training" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                    {
+                        this.state.days[element.day - 1].employers["training"].map(usId => {
 
+                            const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
+
+                            return (
+                                <li key={usId} name="training">{user.name} {user.surname}</li>
+                            )
+                        })
+                    }
                 </ul>
                 <h4>Urlop</h4>
-                <ul className="leave" onDragLeave={this.drag}>
+                <ul name="leave" className="leave" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                    {
+                        this.state.days[element.day - 1].employers["leave"].map(usId => {
 
+                            const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
+
+                            return (
+                                <li key={usId} name="leave">{user.name} {user.surname}</li>
+                            )
+                        })
+                    }
                 </ul>
                 <h4>Opieka</h4>
-                <ul className="childCare" onDragLeave={this.drag}>
+                <ul name="childCare" className="childCare" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                    {
+                        this.state.days[element.day - 1].employers["childCare"].map(usId => {
 
+                            const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
+
+                            return (
+                                <li key={usId} name="childCare">{user.name} {user.surname}</li>
+                            )
+                        })
+                    }
                 </ul>
                 <h4>L4</h4>
-                <ul className="sickleave" onDragLeave={this.drag}>
+                <ul name="sickLeave" className="sickleave" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                    {
+                        this.state.days[element.day - 1].employers["sickLeave"].map(usId => {
 
+                            const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
+
+                            return (
+                                <li key={usId} name="sickLeave">{user.name} {user.surname}</li>
+                            )
+                        })
+                    }
                 </ul>
             </div>
         ))
 
-        const users = this.state.users.filter(user => user.active === true).map(user => (
-            <li key={user.id} draggable>
+        const activeUsers = this.state.users.filter(user => user.active === true)
+        const availibleIds = []
+        this.state.scheduleUsers.users.forEach(user => (
+            availibleIds.push(user.userId)
+        ))
+
+        const availibleUsers = activeUsers.filter(user => availibleIds.includes(Number(user.id)))
+
+        const users = availibleUsers.map(user => (
+            <li key={user.id} draggable onDragStart={e => this.dragStart(e, user.id)} onDrag={this.drag}>
                 <div className="user"><i className="fas fa-user"></i></div>
                 <div>
                     <div style={{ fontWeight: '700' }}>{user.name} {user.surname}</div>
@@ -74,7 +171,7 @@ class EditSchedule extends Component {
             <div className="editSchedule">
                 <div className="wrapper">
                     <div className="row editSchedule__header">
-                        <h2>Edycja harmonogramu pracy za {month.toLowerCase()} {year} r.
+                        <h2>Edycja harmonogramu pracy na {month.toLowerCase()} {year} r.
                         </h2>
                         <button className="delete" onClick={this.props.hideEditSchedule}>Odrzuć zmiany</button>
                         <button className="save">Zapisz</button>
@@ -84,6 +181,7 @@ class EditSchedule extends Component {
                             {dayElements}
                         </div>
                         <div className="col-2">
+                            <h2>Pracownicy</h2>
                             <ul className="users">
                                 {users}
                             </ul>

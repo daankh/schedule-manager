@@ -69,6 +69,17 @@
       "time": 0.5,
       "active": true,
       "id": 7
+    },
+    {
+      "login": "dj@wp.pl",
+      "password": "1234",
+      "name": "Daniela",
+      "surname": "Jelonek",
+      "position": "regular",
+      "time": 0.75,
+      "phone": "",
+      "active": true,
+      "id": 8
     }
   ],
   "schedules": [
@@ -3425,6 +3436,137 @@
           "userId": 7,
           "time": 0.5,
           "hoursTowork": 87.2083333333333,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 8,
+          "time": 0.75,
+          "hoursTowork": 130.81249999999997,
           "day": [
             {
               "day": 1,
