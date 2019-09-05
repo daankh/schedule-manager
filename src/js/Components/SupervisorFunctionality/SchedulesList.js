@@ -16,8 +16,11 @@ class SchedulesList extends Component {
 
     showEditSchedule = (e) => {
         this.setState({
-            showEditSchedule: true,
-            scheduleId: e.target.dataset.id
+            scheduleId: e.target.dataset.id,
+        }, () => {
+            this.setState({
+                showEditSchedule: true
+            })
         })
     }
 
@@ -87,6 +90,7 @@ class SchedulesList extends Component {
                         scheduleUsers={this.props.scheduleUsers}
                         users={this.props.users}
                         hideEditSchedule={this.hideEditSchedule}
+                        scheduleId={this.state.scheduleId}
                     />
                 </>
             )

@@ -14,6 +14,7 @@
     &__header {
         display: flex;
         align-items: center;
+        margin-bottom: 1.2rem;
 
         h2 {
             font-size: 2.4rem;
@@ -44,6 +45,87 @@
                 &:hover {
                     background-color: lighten( $color-delete-btn, 8%);
                 }
+            }
+        }
+    }
+
+    &__panel {
+        display: flex;
+        
+        justify-content: space-between;
+       
+    .col-1 {
+        display: flex;
+        flex-wrap: wrap;
+        // flex-basis: 75%;
+            .day {
+                background-color: $color-bgc-form;
+                color: $color-font-form;
+                width: calc(100% / 6);
+                min-height: 16rem;
+                margin-bottom: 1rem;
+                margin-right: 1rem;
+                
+
+                &__heading {
+                    
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    span {
+                        font-size: 2rem;
+                        display: inline-block;
+                        width: 4rem;
+                        height: 4rem;
+                        margin: .5rem;
+                        border: 3px solid $color-font-form;
+                        border-radius: 50%;
+
+                        display:flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.6rem;
+                    text-align: center;
+                    background-color: $color-save-btn;
+                    padding: .4rem 0;
+                }
+
+                ul {
+                    min-height: 3rem;
+                }
+            }
+        }
+
+        .col-2 {
+            // flex-basis: 25%;
+            flex-shrink: 0;
+
+            ul {
+                list-style: none;
+
+                li {
+                    font-size: 1.4rem;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    // padding: 2rem;
+                    background-color: $color-bgc-header;
+                    margin-bottom: 1rem;
+                    padding: 1rem 2rem;
+                    cursor: pointer;
+
+                    .user {
+                        font-size: 3.4rem;
+                        padding: .8rem;
+                        margin-right: 1rem;
+                    }
+                }
+
+            
             }
         }
     }
