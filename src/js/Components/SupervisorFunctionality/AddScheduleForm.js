@@ -27,8 +27,6 @@ class AddScheduleForm extends Component {
         const daysOfWeek = daysArr.map(day => day.day())
         const widthoutSunday = daysOfWeek.filter(day => day !== 0)
         const workingDay = widthoutSunday.filter(day => day !== 6)
-        console.log(workingDay)
-        console.log(workingDay.length)
         return time * hoursPerDay * workingDay.length
     }
 
@@ -89,7 +87,7 @@ class AddScheduleForm extends Component {
             const filteredUsers = this.props.users.filter(user => user.active === true)
 
             filteredUsers.forEach(user => {
-                console.log(user)
+
                 const days = []
 
                 for (let i = 1; i <= daysNumber; i++) {
