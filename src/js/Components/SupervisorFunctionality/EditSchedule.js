@@ -67,6 +67,37 @@ class EditSchedule extends Component {
         // console.log(e.target)
     }
 
+    saveData = () => {
+        const id = this.state.schedule.id
+
+        fetch(`${this.props.urlSchedules}/${id}`, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: 'PUT',
+            body: JSON.stringify(this.state.schedule)
+        }).then(data => {
+            console.log('Pomyślnie uaktualniono harmonogram')
+            return data.json()
+        }).then(() => {
+            const id = this.state.scheduleUsers.id
+
+            fetch(`${this.props.urlScheduleUser}/${id}`, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                method: 'PUT',
+                body: JSON.stringify(this.state.scheduleUsers)
+            }).then(() => {
+                console.log('Pomyślnie uaktualniono harmonogram')
+                this.props.updateSchedules()
+                this.props.updateSchedulesUsers()
+            }).catch(err => console.log(err, 'nie zaktualiozonoa harmonogramu '))
+        }).catch(err => console.log(err, 'nie nie zaktualizowano harmonogramu '))
+    }
+
     render() {
 
         const month = this.props.months.filter(month => month.number === Number(this.state.schedule.month))[0].name
@@ -83,7 +114,8 @@ class EditSchedule extends Component {
                             const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
 
                             return (
-                                <li key={usId} name="from7to15">{user.name} {user.surname}</li>
+                                <li key={usId} name="from7to15">{user.name} {user.surname}
+                                    <div className="trash-container"><i className="fas fa-trash"></i></div></li>
                             )
                         })
                     }
@@ -96,7 +128,7 @@ class EditSchedule extends Component {
                             const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
 
                             return (
-                                <li key={usId} name="from7to19">{user.name} {user.surname}</li>
+                                <li key={usId} name="from7to19">{user.name} {user.surname} <div className="trash-container"><i className="fas fa-trash"></i></div> </li>
                             )
                         })
                     }
@@ -109,7 +141,7 @@ class EditSchedule extends Component {
                             const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
 
                             return (
-                                <li key={usId} name="from19to7">{user.name} {user.surname}</li>
+                                <li key={usId} name="from19to7">{user.name} {user.surname} <div className="trash-container"><i className="fas fa-trash"></i></div></li>
                             )
                         })
                     }
@@ -122,7 +154,7 @@ class EditSchedule extends Component {
                             const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
 
                             return (
-                                <li key={usId} name="training">{user.name} {user.surname}</li>
+                                <li key={usId} name="training">{user.name} {user.surname} <div className="trash-container"><i className="fas fa-trash"></i></div></li>
                             )
                         })
                     }
@@ -135,7 +167,7 @@ class EditSchedule extends Component {
                             const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
 
                             return (
-                                <li key={usId} name="leave">{user.name} {user.surname}</li>
+                                <li key={usId} name="leave">{user.name} {user.surname} <div className="trash-container"><i className="fas fa-trash"></i></div></li>
                             )
                         })
                     }
@@ -148,7 +180,7 @@ class EditSchedule extends Component {
                             const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
 
                             return (
-                                <li key={usId} name="childCare">{user.name} {user.surname}</li>
+                                <li key={usId} name="childCare">{user.name} {user.surname} <div className="trash-container"><i className="fas fa-trash"></i></div></li>
                             )
                         })
                     }
@@ -161,7 +193,7 @@ class EditSchedule extends Component {
                             const user = this.state.users.filter(user => Number(user.id) === Number(usId))[0]
 
                             return (
-                                <li key={usId} name="sickLeave">{user.name} {user.surname}</li>
+                                <li key={usId} name="sickLeave">{user.name} {user.surname} <div className="trash-container"><i className="fas fa-trash"></i></div></li>
                             )
                         })
                     }
@@ -194,8 +226,8 @@ class EditSchedule extends Component {
                     <div className="row editSchedule__header">
                         <h2>Edycja harmonogramu pracy na {month.toLowerCase()} {year} r.
                         </h2>
-                        <button className="delete" onClick={this.props.hideEditSchedule}>Odrzuć zmiany</button>
-                        <button className="save">Zapisz</button>
+                        <button className="delete" onClick={this.props.hideEditSchedule}>Zamknij</button>
+                        <button className="save" onClick={this.saveData}>Zapisz</button>
                     </div>
                     <div className="row editSchedule__panel">
                         <div className="col-1">

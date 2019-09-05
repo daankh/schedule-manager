@@ -83,6 +83,7 @@ class SchedulesList extends Component {
                         months={this.state.months}
                         scheduleId={this.state.scheduleId}
                         updateSchedules={this.props.getSchedules}
+                        updateSchedulesUsers={this.props.updateSchedulesUsers}
                         getUsers={this.props.getUsers}
                         getUserSchedule={this.props.getUserSchedule}
                         getSchedules={this.props.updateSchedulesHandler}
@@ -91,6 +92,7 @@ class SchedulesList extends Component {
                         users={this.props.users}
                         hideEditSchedule={this.hideEditSchedule}
                         scheduleId={this.state.scheduleId}
+
                     />
                 </>
             )
