@@ -71,9 +71,48 @@ class AddScheduleForm extends Component {
             body: JSON.stringify(schedule)
         }).then(data => {
             console.log('Pomyślnie dodano harmonogram')
+        }).catch(err => console.log(err, 'nie dodano harmonogramu '))
+
+
+        const scheduleUsers = []
+
+        const filteredUsers = this.props.users.filter(user => user.active === true)
+
+        filteredUsers.forEach(user => {
+            console.log(user)
+            const days = []
+
+            for (let i = 1; i <= daysNumber; i++) {
+                days.push({
+                    day: i,
+                    shift: '',
+                })
+            }
+
+            const scheduleUser = {
+                userId: user.id,
+                time: user.time,
+                month: this.state.selectedMonth,
+                year: this.state.selectedYear,
+                day: days,
+            }
+
+            scheduleUsers.push(scheduleUser)
+        })
+
+        fetch(this.props.urlScheduleUser, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: 'POST',
+            body: JSON.stringify(scheduleUsers)
+        }).then(data => {
+            console.log('Pomyślnie dodano harmonogram')
             this.props.updateSchedules()
         }).catch(err => console.log(err, 'nie dodano harmonogramu '))
     }
+
 
 
     render() {

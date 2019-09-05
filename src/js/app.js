@@ -22,7 +22,6 @@ import Supervisor from './Layouts/Supervisor';
 import EmployersManaging from './Components/SupervisorFunctionality/EmployersManaging';
 import MySchedule from './Components/CommonFunctionality/MySchedule';
 import Schedules from './Components/SupervisorFunctionality/Schedules'
-// import AddSchedule from './Components/SupervisorFunctionality/AddSchedule';
 // import EditSchedules from './Components/SupervisorFunctionality/EditSchedules'
 
 import Regular from './Layouts/Regular'

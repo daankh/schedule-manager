@@ -31,8 +31,8 @@ class UserInfo extends Component {
 
     componentDidMount() {
         //default user
-        const user = this.props.users
-        console.log(this.props.users)
+        // const user = this.props.users
+        // console.log(this.props.users)
         // const user = filteredUsers[0]
 
         // this.setState({

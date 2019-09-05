@@ -11,6 +11,11 @@ class Schedules extends Component {
             schedules: [],
             urlSchedules: 'http://localhost:3000/schedules',
 
+            urlScheduleUser: 'http://localhost:3000/scheduleUser',
+
+            users: [],
+            urlUsers: 'http://localhost:3000/users',
+
             selectedMonth: moment().add(1, 'months').get('month'),
             selectedYear: moment().add(1, 'month').get('year')
         }
@@ -39,8 +44,26 @@ class Schedules extends Component {
         ))
     }
 
+    getUsers = () => {
+        fetch(this.state.urlUsers, {
+            method: 'GET'
+        }).then(resp => {
+            if (resp.ok)
+                return resp.json();
+            else
+                throw new Error('Błąd sieci!');
+        }).then(data => {
+            this.setState({
+                users: data,
+            })
+        }).catch(err => (
+            console.log(err)
+        ))
+    }
+
     componentDidMount() {
         this.updateSchedulesHandler()
+        this.getUsers()
     }
 
     render() {
@@ -48,7 +71,13 @@ class Schedules extends Component {
         return (
             <div className="schedules">
                 <div className="wrapper">
-                    <AddScheduleForm urlSchedules={this.state.urlSchedules} updateSchedules={this.updateSchedulesHandler} month={this.state.selectedMonth} year={this.state.selectedYear} />
+                    <AddScheduleForm
+                        urlSchedules={this.state.urlSchedules}
+                        updateSchedules={this.updateSchedulesHandler}
+                        month={this.state.selectedMonth}
+                        year={this.state.selectedYear}
+                        urlScheduleUser={this.state.urlScheduleUser}
+                        users={this.state.users} />
                     <h2>Harmonogramy</h2>
                     <SchedulesList schedules={this.state.schedules} />
                 </div>
