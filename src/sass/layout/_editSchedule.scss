@@ -1,0 +1,157 @@
+.editSchedule {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 1000;
+    background-color: $color-body;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    .row {
+        width: 100%;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
+
+        h2 {
+            font-size: 2.4rem;
+            flex-grow: 1;
+        }
+
+        button {
+            height: 4rem;
+            border: none;
+            padding: 0 2rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: .3s;
+           
+
+            &.save {
+                background-color: $color-save-btn;
+                color: #333;
+
+                &:hover {
+                    background-color: darken( $color-save-btn, 8%);
+                }
+            }
+
+            &.delete {
+                background-color: $color-delete-btn;
+                margin-right: 2rem;
+                &:hover {
+                    background-color: lighten( $color-delete-btn, 8%);
+                }
+            }
+        }
+    }
+
+    &__panel {
+        display: flex;
+        
+        justify-content: space-between;
+       
+    .col-1 {
+        display: flex;
+        flex-wrap: wrap;
+        // flex-basis: 75%;
+            .day {
+                background-color: $color-bgc-form;
+                color: $color-font-form;
+                width: calc((100% / 4) - (3*1rem));
+                min-height: 16rem;
+                margin-bottom: 1rem;
+                margin-right: 2rem;
+                
+
+                &__heading {
+                    
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    span {
+                        font-size: 2rem;
+                        display: inline-block;
+                        width: 4rem;
+                        height: 4rem;
+                        margin: .5rem;
+                        border: 3px solid $color-font-form;
+                        border-radius: 50%;
+
+                        display:flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.6rem;
+                    text-align: center;
+                    background-color: $color-save-btn;
+                    padding: .4rem 0;
+                }
+
+
+                &__list {
+                    font-size: 1.4rem;
+                    list-style: none;
+                    min-height: 4rem;
+
+                   li {
+                    background-color: $color-bgc-header;
+                    color: $color-font-header;
+                    width: 80%;
+                    margin: .8rem auto;
+                    padding: 1rem;
+                    border-radius: 1rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .trash-container {
+                        font-size: 2rem;
+                        margin-left: 1rem;
+                        cursor: pointer;
+                    }
+                   }
+                }
+            }
+        }
+
+        .col-2 {
+            height: calc(100vh);
+            overflow-y: scroll;
+            position: sticky;
+            top: 0;
+            flex-shrink: 0;
+
+            ul {
+                list-style: none;
+
+                li {
+                    font-size: 1.4rem;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    // padding: 2rem;
+                    background-color: $color-bgc-header;
+                    margin-bottom: 1rem;
+                    padding: 1rem 2rem;
+                    cursor: pointer;
+
+                    .user {
+                        font-size: 3.4rem;
+                        padding: .8rem;
+                        margin-right: 1rem;
+                    }
+                }
+
+            
+            }
+        }
+    }
+}

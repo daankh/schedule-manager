@@ -11,6 +11,7 @@ class Schedules extends Component {
             schedules: [],
             urlSchedules: 'http://localhost:3000/schedules',
 
+            scheduleUsers: [],
             urlScheduleUser: 'http://localhost:3000/scheduleUser',
 
             users: [],
@@ -44,6 +45,23 @@ class Schedules extends Component {
         ))
     }
 
+    getUserSchedule = () => {
+        fetch(this.state.urlScheduleUser, {
+            method: 'GET'
+        }).then(resp => {
+            if (resp.ok)
+                return resp.json();
+            else
+                throw new Error('Błąd sieci!');
+        }).then(data => {
+            this.setState({
+                scheduleUsers: data
+            })
+        }).catch(err => (
+            console.log(err)
+        ))
+    }
+
     getUsers = () => {
         fetch(this.state.urlUsers, {
             method: 'GET'
@@ -64,6 +82,7 @@ class Schedules extends Component {
     componentDidMount() {
         this.updateSchedulesHandler()
         this.getUsers()
+        this.getUserSchedule()
     }
 
     render() {
@@ -74,12 +93,25 @@ class Schedules extends Component {
                     <AddScheduleForm
                         urlSchedules={this.state.urlSchedules}
                         updateSchedules={this.updateSchedulesHandler}
+                        updateSchedulesUsers={this.getUserSchedule}
                         month={this.state.selectedMonth}
                         year={this.state.selectedYear}
                         urlScheduleUser={this.state.urlScheduleUser}
                         users={this.state.users} />
                     <h2>Harmonogramy</h2>
-                    <SchedulesList schedules={this.state.schedules} />
+                    <SchedulesList schedules={this.state.schedules}
+                        urlSchedules={this.state.urlSchedules}
+                        urlScheduleUser={this.state.urlScheduleUser}
+                        urlUsers={this.state.urlUsers}
+                        updateSchedules={this.updateSchedulesHandler}
+                        updateSchedulesUsers={this.getUserSchedule}
+                        getUsers={this.getUsers}
+                        getUserSchedule={this.getUserSchedule}
+                        getSchedules={this.updateSchedulesHandler}
+                        schedules={this.state.schedules}
+                        scheduleUsers={this.state.scheduleUsers}
+                        users={this.state.users}
+                    />
                 </div>
             </div>
         )

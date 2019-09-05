@@ -81,7 +81,8 @@ class AddScheduleForm extends Component {
             body: JSON.stringify(schedule)
         }).then(data => {
             console.log('Pomyślnie dodano harmonogram')
-
+            return data.json()
+        }).then(data => {
             const scheduleUsers = []
 
             const filteredUsers = this.props.users.filter(user => user.active === true)
@@ -103,13 +104,19 @@ class AddScheduleForm extends Component {
                     userId: user.id,
                     time: user.time,
                     hoursTowork: hours,
-                    month: this.state.selectedMonth,
-                    year: this.state.selectedYear,
+
                     day: days,
                 }
 
                 scheduleUsers.push(scheduleUser)
             })
+
+            const obj = {
+                id: data.id,
+                month: this.state.selectedMonth,
+                year: this.state.selectedYear,
+                users: scheduleUsers
+            }
 
             fetch(this.props.urlScheduleUser, {
                 headers: {
@@ -117,10 +124,11 @@ class AddScheduleForm extends Component {
                     'Content-Type': 'application/json'
                 },
                 method: 'POST',
-                body: JSON.stringify(scheduleUsers)
+                body: JSON.stringify(obj)
             }).then(data => {
                 console.log('Pomyślnie dodano harmonogram')
                 this.props.updateSchedules()
+                this.props.updateSchedulesUsers()
             }).catch(err => console.log(err, 'nie dodano harmonogramu '))
         }).catch(err => console.log(err, 'nie dodano harmonogramu '))
 

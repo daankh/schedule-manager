@@ -31,3 +31,13 @@ body {
 select {
     cursor: pointer;
 }
+
+button {
+    cursor: pointer;
+    outline: none;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
