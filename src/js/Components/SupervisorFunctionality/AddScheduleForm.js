@@ -22,14 +22,18 @@ class AddScheduleForm extends Component {
         })
     }
 
+    calculateHoursToWork(time, daysArr) {
+        const hoursPerDay = 7.58333333333333
+        const daysOfWeek = daysArr.map(day => day.day())
+        const widthoutSunday = daysOfWeek.filter(day => day !== 0)
+        const workingDay = widthoutSunday.filter(day => day !== 6)
+        console.log(workingDay)
+        console.log(workingDay.length)
+        return time * hoursPerDay * workingDay.length
+    }
+
     addSchedule = (e) => {
         e.preventDefault()
-
-        const startDay = moment({
-            year: this.state.selectedYear,
-            month: this.state.selectedMonth,
-            day: 1
-        })
 
         const endDay = moment({
             year: this.state.selectedYear,
@@ -40,6 +44,7 @@ class AddScheduleForm extends Component {
         const daysNumber = endDay.get('date');
 
         const days = []
+        const momentDays = []
 
         for (let i = 1; i <= daysNumber; i++) {
             days.push({
@@ -54,6 +59,13 @@ class AddScheduleForm extends Component {
                     training: []
                 }
             })
+            momentDays.push(
+                moment({
+                    year: this.state.selectedYear,
+                    month: this.selectedMonth,
+                    day: i
+                })
+            )
         }
 
         const schedule = {
@@ -71,46 +83,51 @@ class AddScheduleForm extends Component {
             body: JSON.stringify(schedule)
         }).then(data => {
             console.log('Pomyślnie dodano harmonogram')
+
+            const scheduleUsers = []
+
+            const filteredUsers = this.props.users.filter(user => user.active === true)
+
+            filteredUsers.forEach(user => {
+                console.log(user)
+                const days = []
+
+                for (let i = 1; i <= daysNumber; i++) {
+                    days.push({
+                        day: i,
+                        shift: '',
+                    })
+                }
+
+                const hours = this.calculateHoursToWork(user.time, momentDays)
+
+                const scheduleUser = {
+                    userId: user.id,
+                    time: user.time,
+                    hoursTowork: hours,
+                    month: this.state.selectedMonth,
+                    year: this.state.selectedYear,
+                    day: days,
+                }
+
+                scheduleUsers.push(scheduleUser)
+            })
+
+            fetch(this.props.urlScheduleUser, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                method: 'POST',
+                body: JSON.stringify(scheduleUsers)
+            }).then(data => {
+                console.log('Pomyślnie dodano harmonogram')
+                this.props.updateSchedules()
+            }).catch(err => console.log(err, 'nie dodano harmonogramu '))
         }).catch(err => console.log(err, 'nie dodano harmonogramu '))
 
 
-        const scheduleUsers = []
 
-        const filteredUsers = this.props.users.filter(user => user.active === true)
-
-        filteredUsers.forEach(user => {
-            console.log(user)
-            const days = []
-
-            for (let i = 1; i <= daysNumber; i++) {
-                days.push({
-                    day: i,
-                    shift: '',
-                })
-            }
-
-            const scheduleUser = {
-                userId: user.id,
-                time: user.time,
-                month: this.state.selectedMonth,
-                year: this.state.selectedYear,
-                day: days,
-            }
-
-            scheduleUsers.push(scheduleUser)
-        })
-
-        fetch(this.props.urlScheduleUser, {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            method: 'POST',
-            body: JSON.stringify(scheduleUsers)
-        }).then(data => {
-            console.log('Pomyślnie dodano harmonogram')
-            this.props.updateSchedules()
-        }).catch(err => console.log(err, 'nie dodano harmonogramu '))
     }
 
 
