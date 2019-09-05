@@ -55,7 +55,7 @@ class EditSchedule extends Component {
             <div className="day" key={element.day}>
                 <h3 className="day__heading"><span>{element.day}</span></h3>
                 <h4>Zmiana R</h4>
-                <ul name="from7to15" className="rShift" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                <ul name="from7to15" className="day__list" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
                     {
                         this.state.days[element.day - 1].employers["from7to15"].map(usId => {
 
@@ -68,7 +68,7 @@ class EditSchedule extends Component {
                     }
                 </ul>
                 <h4>Zmiana D</h4>
-                <ul name="from7to19" className="dShift" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                <ul name="from7to19" className="day__list" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
                     {
                         this.state.days[element.day - 1].employers["from7to19"].map(usId => {
 
@@ -81,7 +81,7 @@ class EditSchedule extends Component {
                     }
                 </ul>
                 <h4>Zmiana N</h4>
-                <ul name="from19to7" className="dShift" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                <ul name="from19to7" className="day__list" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
                     {
                         this.state.days[element.day - 1].employers["from19to7"].map(usId => {
 
@@ -94,7 +94,7 @@ class EditSchedule extends Component {
                     }
                 </ul>
                 <h4>Szkolenie</h4>
-                <ul name="training" className="training" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                <ul name="training" className="day__list" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
                     {
                         this.state.days[element.day - 1].employers["training"].map(usId => {
 
@@ -107,7 +107,7 @@ class EditSchedule extends Component {
                     }
                 </ul>
                 <h4>Urlop</h4>
-                <ul name="leave" className="leave" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                <ul name="leave" className="day__list" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
                     {
                         this.state.days[element.day - 1].employers["leave"].map(usId => {
 
@@ -120,7 +120,7 @@ class EditSchedule extends Component {
                     }
                 </ul>
                 <h4>Opieka</h4>
-                <ul name="childCare" className="childCare" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                <ul name="childCare" className="day__list" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
                     {
                         this.state.days[element.day - 1].employers["childCare"].map(usId => {
 
@@ -133,7 +133,7 @@ class EditSchedule extends Component {
                     }
                 </ul>
                 <h4>L4</h4>
-                <ul name="sickLeave" className="sickleave" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
+                <ul name="sickLeave" className="day__list" onDragOver={e => this.dragOver(e)} onDrop={e => this.drop(e, element.day)}>
                     {
                         this.state.days[element.day - 1].employers["sickLeave"].map(usId => {
 
