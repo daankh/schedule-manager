@@ -1,0 +1,50 @@
+.editSchedule {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 1000;
+    background-color: $color-body;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    .row {
+        width: 100%;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 2.4rem;
+            flex-grow: 1;
+        }
+
+        button {
+            height: 4rem;
+            border: none;
+            padding: 0 2rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: .3s;
+           
+
+            &.save {
+                background-color: $color-save-btn;
+                color: #333;
+
+                &:hover {
+                    background-color: darken( $color-save-btn, 8%);
+                }
+            }
+
+            &.delete {
+                background-color: $color-delete-btn;
+                margin-right: 2rem;
+                &:hover {
+                    background-color: lighten( $color-delete-btn, 8%);
+                }
+            }
+        }
+    }
+}
