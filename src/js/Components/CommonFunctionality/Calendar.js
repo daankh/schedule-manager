@@ -7,18 +7,38 @@ class Calendar extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {}
+        this.state = {
+            schedulesUser: [],
+            selectedSchedule: {}
+        }
+    }
+
+    componentDidMount() {
+        this.state = {
+            schedulesUser: this.props.schedulesUser,
+            selectedSchedule: this.props.schedulesUser[this.props.schedulesUser - 1]
+        }
     }
 
     render() {
-        console.log(this.props.schedulesUser)
-        console.log(this.props.id)
+        // console.log(this.props.schedulesUser)
+        // console.log(this.props.id)
+        // console.log(this.state.selectedSchedule)
+        // console.log(this.props.scheduleUsersAll)
+        console.log(this.props.selectedSchedule)
+
+        if (!this.props.schedulesUser) {
+            return null
+        }
+
         return (
             <>
                 <div className="row section-header">
-                    <select>
-                        <option>wrzesień 2019</option>
-                    </select>
+                    <div className="selectSchedule">
+                        <button onClick={(e) => this.props.changeSchadule(e, "left")}>&lt;</button>
+                        <span>{this.props.selectedSchedule.month}/{this.props.selectedSchedule.year}</span>
+                        <button onClick={(e) => this.props.changeSchadule(e, "right")}>&gt;</button>
+                    </div>
                 </div>
                 <div className="row section-calendar">
                     <table className="calendar__table">

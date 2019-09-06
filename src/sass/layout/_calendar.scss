@@ -11,22 +11,57 @@
         align-items: center;
         margin-bottom: 2rem;
 
-        select {
+        .selectSchedule {
             background-color: $color-bgc-header;
             color: $color-font-header;
-            border: none;
-            outline: none;
-            cursor: pointer;
             font-size: 3rem;
-            padding: 1.6rem;
-            border-radius: 2rem;
-            text-align: center;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
 
-            &:not(:last-child) {
-                margin-right: 1rem;
-                min-width: 20rem;    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 30rem;
+
+            span {
+                margin: 0 3rem;
+            }
+
+            button {
+                outline: none;
+                border: none;
+                background-color: $color-font-header;
+                color: $color-font-form;
+
+                font-size: 3rem;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+
+                transition: .3s;
+                &:hover {
+                    background-color: $color-font-form;
+                    color:  $color-font-header;
+                }
             }
         }
+
+        // select {
+        //     background-color: $color-bgc-header;
+        //     color: $color-font-header;
+        //     border: none;
+        //     outline: none;
+        //     cursor: pointer;
+        //     font-size: 3rem;
+        //     padding: 1.6rem;
+        //     border-radius: 2rem;
+        //     text-align: center;
+
+        //     &:not(:last-child) {
+        //         margin-right: 1rem;
+        //         min-width: 20rem;    
+        //     }
+        // }
     }
 
     &__table {

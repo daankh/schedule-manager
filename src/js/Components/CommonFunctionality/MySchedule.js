@@ -11,7 +11,38 @@ class MySchedule extends Component {
             urlScheduleUser: 'http://localhost:3000/scheduleUser',
             id: this.props.userData.id,
             scheduleUsersAll: [],
-            schedulesUser: []
+            schedulesUser: [],
+            selectedSchedule: {},
+            selectedScheduleIndex: null,
+            momentDayObjectsForSelectedSchedule: []
+        }
+    }
+
+    changeSchaduleHandler = (e, direction) => {
+        if (direction === "left") {
+
+            if (this.state.selectedScheduleIndex <= 0) {
+                return
+            }
+
+            const index = this.state.selectedScheduleIndex - 1
+
+            this.setState({
+                selectedScheduleIndex: index,
+                selectedSchedule: this.state.schedulesUser[index]
+            })
+
+        } else if (direction === 'right') {
+            if (this.state.selectedScheduleIndex >= (this.state.schedulesUser.length - 1)) {
+                return
+            }
+
+            const index = this.state.selectedScheduleIndex + 1
+
+            this.setState({
+                selectedScheduleIndex: index,
+                selectedSchedule: this.state.selectedSchedule[index]
+            })
         }
     }
 
@@ -35,6 +66,17 @@ class MySchedule extends Component {
 
                 this.setState({
                     schedulesUser: schedulesUser
+                }, () => {
+
+                    this.setState({
+                        selectedSchedule: schedulesUser[schedulesUser.length - 1],
+                        selectedScheduleIndex: schedulesUser.length - 1
+                    }, () => {
+                        const exactScheduleForUser = this.state.selectedSchedule.users.filter(user => Number(user.userId) === Number(this.state.id))
+                        console.log(exactScheduleForUser)
+
+                        const momentDayObjectsForSelectedSchedule = exactScheduleForUser.day.map(day)
+                    })
                 })
             })
         }).catch(err => (
@@ -51,7 +93,7 @@ class MySchedule extends Component {
         return (
             <div className="calendar">
                 <div className="wrapper">
-                    <Calendar schedulesUser={this.state.schedulesUser} id={this.state.id} />
+                    <Calendar selectedSchedule={this.state.selectedSchedule} schedulesUser={this.state.schedulesUser} id={this.state.id} changeSchadule={this.changeSchaduleHandler} />
                 </div>
             </div>
         )
