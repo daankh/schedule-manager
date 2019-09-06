@@ -35,11 +35,6 @@ class App extends Component {
         super(props);
         this.state = {
             userData: {},
-
-            // users: [],
-            // schedules: [],
-            // userSchedule: []
-
         }
     }
 
@@ -86,20 +81,6 @@ class App extends Component {
                                 />
                             </Supervisor>
                         )} />
-                        {/* <Route exact path="/supervisor/editSchedules" component={props => (
-                            <Supervisor userData={this.state.userData}
-                                onLogout={this.onLogoutHandler}>
-                                <EditSchedules {...props} userData={this.state.userData}
-                                />
-                            </Supervisor>
-                        )} />
-                            <Route exact path="/supervisor/addSchedule" component={props => (
-                            <Supervisor userData={this.state.userData}
-                                onLogout={this.onLogoutHandler}>
-                                <AddSchedule {...props} userData={this.state.userData}
-                                />
-                            </Supervisor>
-                        )} /> */}
                         <Route exact path="/supervisor/settings" component={props => (
                             <Supervisor userData={this.state.userData}
                                 onLogout={this.onLogoutHandler}>

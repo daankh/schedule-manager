@@ -24,9 +24,9 @@ class Regular extends Component {
                                 <li>
                                     <NavLink className="link" activeStyle={active} exact to="/regular">Mój grafik</NavLink>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <NavLink className="link" activeStyle={active} to="/regular/requests">Prośby o wolne</NavLink>
-                                </li>
+                                </li> */}
                                 <li>
                                     <NavLink className="link" activeStyle={active} to="/regular/settings">Ustawienia</NavLink>
                                 </li>

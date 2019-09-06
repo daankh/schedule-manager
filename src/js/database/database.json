@@ -113,6 +113,17 @@
       "phone": "",
       "active": true,
       "id": 11
+    },
+    {
+      "login": "az@gmail.com",
+      "password": "1234",
+      "name": "Anna",
+      "surname": "Ziąb",
+      "position": "regular",
+      "time": 1,
+      "phone": "",
+      "active": true,
+      "id": 12
     }
   ],
   "schedules": [
@@ -185,8 +196,12 @@
         {
           "day": 5,
           "employers": {
-            "from7to15": [],
-            "from7to19": [],
+            "from7to15": [
+              2
+            ],
+            "from7to19": [
+              3
+            ],
             "from19to7": [],
             "leave": [],
             "sickLeave": [],
@@ -199,11 +214,15 @@
           "employers": {
             "from7to15": [],
             "from7to19": [],
-            "from19to7": [],
+            "from19to7": [
+              3
+            ],
             "leave": [],
             "sickLeave": [],
             "childCare": [],
-            "training": []
+            "training": [
+              2
+            ]
           }
         },
         {
@@ -211,11 +230,15 @@
           "employers": {
             "from7to15": [],
             "from7to19": [],
-            "from19to7": [],
+            "from19to7": [
+              3
+            ],
             "leave": [],
             "sickLeave": [],
             "childCare": [],
-            "training": []
+            "training": [
+              2
+            ]
           }
         },
         {
@@ -234,7 +257,9 @@
           "day": 9,
           "employers": {
             "from7to15": [],
-            "from7to19": [],
+            "from7to19": [
+              3
+            ],
             "from19to7": [],
             "leave": [],
             "sickLeave": [],
@@ -251,7 +276,9 @@
             "leave": [],
             "sickLeave": [],
             "childCare": [],
-            "training": []
+            "training": [
+              3
+            ]
           }
         },
         {
@@ -260,7 +287,9 @@
             "from7to15": [],
             "from7to19": [],
             "from19to7": [],
-            "leave": [],
+            "leave": [
+              3
+            ],
             "sickLeave": [],
             "childCare": [],
             "training": []
@@ -272,7 +301,9 @@
             "from7to15": [],
             "from7to19": [],
             "from19to7": [],
-            "leave": [],
+            "leave": [
+              3
+            ],
             "sickLeave": [],
             "childCare": [],
             "training": []
@@ -510,14 +541,16 @@
       "id": 1
     },
     {
-      "month": "7",
+      "month": "10",
       "year": 2019,
       "day": [
         {
           "day": 1,
           "employers": {
             "from7to15": [],
-            "from7to19": [],
+            "from7to19": [
+              2
+            ],
             "from19to7": [],
             "leave": [],
             "sickLeave": [],
@@ -532,7 +565,9 @@
             "from7to19": [],
             "from19to7": [],
             "leave": [],
-            "sickLeave": [],
+            "sickLeave": [
+              4
+            ],
             "childCare": [],
             "training": []
           }
@@ -544,7 +579,9 @@
             "from7to19": [],
             "from19to7": [],
             "leave": [],
-            "sickLeave": [],
+            "sickLeave": [
+              4
+            ],
             "childCare": [],
             "training": []
           }
@@ -556,7 +593,9 @@
             "from7to19": [],
             "from19to7": [],
             "leave": [],
-            "sickLeave": [],
+            "sickLeave": [
+              4
+            ],
             "childCare": [],
             "training": []
           }
@@ -578,7 +617,9 @@
           "employers": {
             "from7to15": [],
             "from7to19": [],
-            "from19to7": [],
+            "from19to7": [
+              7
+            ],
             "leave": [],
             "sickLeave": [],
             "childCare": [],
@@ -603,7 +644,9 @@
             "from7to15": [],
             "from7to19": [],
             "from19to7": [],
-            "leave": [],
+            "leave": [
+              9
+            ],
             "sickLeave": [],
             "childCare": [],
             "training": []
@@ -872,18 +915,6 @@
             "childCare": [],
             "training": []
           }
-        },
-        {
-          "day": 31,
-          "employers": {
-            "from7to15": [],
-            "from7to19": [],
-            "from19to7": [],
-            "leave": [],
-            "sickLeave": [],
-            "childCare": [],
-            "training": []
-          }
         }
       ],
       "id": 2
@@ -1029,7 +1060,7 @@
         {
           "userId": 2,
           "time": 1,
-          "hoursTowork": 144.08333333333323,
+          "hoursTowork": 121.33333333333321,
           "day": [
             {
               "day": 1,
@@ -1049,15 +1080,15 @@
             },
             {
               "day": 5,
-              "shift": ""
+              "shift": "R"
             },
             {
               "day": 6,
-              "shift": ""
+              "shift": "Sz"
             },
             {
               "day": 7,
-              "shift": ""
+              "shift": "Sz"
             },
             {
               "day": 8,
@@ -1160,7 +1191,7 @@
         {
           "userId": 3,
           "time": 0.75,
-          "hoursTowork": 118.81249999999997,
+          "hoursTowork": 48.062499999999986,
           "day": [
             {
               "day": 1,
@@ -1180,15 +1211,15 @@
             },
             {
               "day": 5,
-              "shift": ""
+              "shift": "D"
             },
             {
               "day": 6,
-              "shift": ""
+              "shift": "N"
             },
             {
               "day": 7,
-              "shift": ""
+              "shift": "N"
             },
             {
               "day": 8,
@@ -1196,19 +1227,19 @@
             },
             {
               "day": 9,
-              "shift": ""
+              "shift": "D"
             },
             {
               "day": 10,
-              "shift": ""
+              "shift": "Sz"
             },
             {
               "day": 11,
-              "shift": ""
+              "shift": "U"
             },
             {
               "day": 12,
-              "shift": ""
+              "shift": "U"
             },
             {
               "day": 13,
@@ -2209,13 +2240,13 @@
     },
     {
       "id": 2,
-      "month": "7",
+      "month": "10",
       "year": 2019,
       "users": [
         {
           "userId": 1,
           "time": 1,
-          "hoursTowork": 174.4166666666666,
+          "hoursTowork": 166.83333333333326,
           "day": [
             {
               "day": 1,
@@ -2335,10 +2366,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -2346,11 +2373,11 @@
         {
           "userId": 2,
           "time": 1,
-          "hoursTowork": 174.4166666666666,
+          "hoursTowork": 154.83333333333326,
           "day": [
             {
               "day": 1,
-              "shift": ""
+              "shift": "D"
             },
             {
               "day": 2,
@@ -2466,10 +2493,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -2477,7 +2500,7 @@
         {
           "userId": 3,
           "time": 0.75,
-          "hoursTowork": 130.81249999999997,
+          "hoursTowork": 125.12499999999996,
           "day": [
             {
               "day": 1,
@@ -2597,10 +2620,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -2608,7 +2627,7 @@
         {
           "userId": 4,
           "time": 1,
-          "hoursTowork": 174.4166666666666,
+          "hoursTowork": 144.08333333333323,
           "day": [
             {
               "day": 1,
@@ -2616,15 +2635,15 @@
             },
             {
               "day": 2,
-              "shift": ""
+              "shift": "L4"
             },
             {
               "day": 3,
-              "shift": ""
+              "shift": "L4"
             },
             {
               "day": 4,
-              "shift": ""
+              "shift": "L4"
             },
             {
               "day": 5,
@@ -2728,10 +2747,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -2739,7 +2754,7 @@
         {
           "userId": 6,
           "time": 1,
-          "hoursTowork": 174.4166666666666,
+          "hoursTowork": 166.83333333333326,
           "day": [
             {
               "day": 1,
@@ -2859,10 +2874,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -2870,7 +2881,7 @@
         {
           "userId": 7,
           "time": 0.5,
-          "hoursTowork": 87.2083333333333,
+          "hoursTowork": 71.41666666666663,
           "day": [
             {
               "day": 1,
@@ -2894,7 +2905,7 @@
             },
             {
               "day": 6,
-              "shift": ""
+              "shift": "N"
             },
             {
               "day": 7,
@@ -2990,10 +3001,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -3001,7 +3008,7 @@
         {
           "userId": 8,
           "time": 0.75,
-          "hoursTowork": 130.81249999999997,
+          "hoursTowork": 125.12499999999996,
           "day": [
             {
               "day": 1,
@@ -3121,10 +3128,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -3132,7 +3135,7 @@
         {
           "userId": 9,
           "time": 0.75,
-          "hoursTowork": 130.81249999999997,
+          "hoursTowork": 117.54166666666663,
           "day": [
             {
               "day": 1,
@@ -3164,7 +3167,7 @@
             },
             {
               "day": 8,
-              "shift": ""
+              "shift": "U"
             },
             {
               "day": 9,
@@ -3252,10 +3255,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -3263,7 +3262,7 @@
         {
           "userId": 10,
           "time": 1,
-          "hoursTowork": 174.4166666666666,
+          "hoursTowork": 166.83333333333326,
           "day": [
             {
               "day": 1,
@@ -3383,10 +3382,6 @@
             },
             {
               "day": 30,
-              "shift": ""
-            },
-            {
-              "day": 31,
               "shift": ""
             }
           ]
@@ -3394,7 +3389,7 @@
         {
           "userId": 11,
           "time": 1,
-          "hoursTowork": 174.4166666666666,
+          "hoursTowork": 166.83333333333326,
           "day": [
             {
               "day": 1,
@@ -3515,9 +3510,132 @@
             {
               "day": 30,
               "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 12,
+          "time": 1,
+          "hoursTowork": 166.83333333333326,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
             },
             {
-              "day": 31,
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
               "shift": ""
             }
           ]
