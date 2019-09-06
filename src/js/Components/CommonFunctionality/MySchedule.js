@@ -14,7 +14,8 @@ class MySchedule extends Component {
             schedulesUser: [],
             selectedSchedule: {},
             selectedScheduleIndex: null,
-            momentDayObjectsForSelectedSchedule: []
+            // momentDayObjectsForSelectedSchedule: [],
+            exactScheduleForUser: {}
         }
     }
 
@@ -30,6 +31,13 @@ class MySchedule extends Component {
             this.setState({
                 selectedScheduleIndex: index,
                 selectedSchedule: this.state.schedulesUser[index]
+            }, () => {
+                const exactScheduleForUser = this.state.selectedSchedule.users.filter(user => Number(user.userId) === Number(this.state.id))[0]
+
+                this.setState({
+                    exactScheduleForUser: exactScheduleForUser
+                })
+
             })
 
         } else if (direction === 'right') {
@@ -38,10 +46,18 @@ class MySchedule extends Component {
             }
 
             const index = this.state.selectedScheduleIndex + 1
+            console.log(index)
 
             this.setState({
                 selectedScheduleIndex: index,
-                selectedSchedule: this.state.selectedSchedule[index]
+                selectedSchedule: this.state.schedulesUser[index]
+            }, () => {
+                const exactScheduleForUser = this.state.selectedSchedule.users.filter(user => Number(user.userId) === Number(this.state.id))[0]
+
+                this.setState({
+                    exactScheduleForUser: exactScheduleForUser
+                })
+
             })
         }
     }
@@ -72,10 +88,15 @@ class MySchedule extends Component {
                         selectedSchedule: schedulesUser[schedulesUser.length - 1],
                         selectedScheduleIndex: schedulesUser.length - 1
                     }, () => {
-                        const exactScheduleForUser = this.state.selectedSchedule.users.filter(user => Number(user.userId) === Number(this.state.id))
-                        console.log(exactScheduleForUser)
+                        const exactScheduleForUser = this.state.selectedSchedule.users.filter(user => Number(user.userId) === Number(this.state.id))[0]
+                        // console.log(this.state.selectedSchedule)
+                        // console.log(exactScheduleForUser)
 
-                        const momentDayObjectsForSelectedSchedule = exactScheduleForUser.day.map(day)
+                        this.setState({
+                            exactScheduleForUser: exactScheduleForUser
+                        })
+
+                        // const momentDayObjectsForSelectedSchedule = exactScheduleForUser.day.map(day)
                     })
                 })
             })
@@ -93,7 +114,7 @@ class MySchedule extends Component {
         return (
             <div className="calendar">
                 <div className="wrapper">
-                    <Calendar selectedSchedule={this.state.selectedSchedule} schedulesUser={this.state.schedulesUser} id={this.state.id} changeSchadule={this.changeSchaduleHandler} />
+                    <Calendar selectedSchedule={this.state.selectedSchedule} schedulesUser={this.state.schedulesUser} id={this.state.id} changeSchadule={this.changeSchaduleHandler} exactScheduleForUser={this.state.exactScheduleForUser} />
                 </div>
             </div>
         )

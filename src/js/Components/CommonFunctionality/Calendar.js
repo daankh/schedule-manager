@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import moment from 'moment'
-
-import Week from './Week'
 
 class Calendar extends Component {
     constructor(props) {
@@ -25,38 +22,38 @@ class Calendar extends Component {
         // console.log(this.props.id)
         // console.log(this.state.selectedSchedule)
         // console.log(this.props.scheduleUsersAll)
-        console.log(this.props.selectedSchedule)
+        // console.log(this.props.selectedSchedule)
 
-        if (!this.props.schedulesUser) {
+        if (!this.props.schedulesUser || !this.props.selectedSchedule) {
             return null
         }
+
+        let dayCardsEl = null
+        if (this.props.exactScheduleForUser.day !== undefined) {
+            dayCardsEl = this.props.exactScheduleForUser.day.map(day => (
+                <div className="dayCard" key={day.day}>
+                    <div className="heading">
+                        {day.day}
+                    </div>
+                    <div className="shift">
+                        {day["shift"]}
+                    </div>
+                </div>
+            ))
+        }
+
 
         return (
             <>
                 <div className="row section-header">
                     <div className="selectSchedule">
                         <button onClick={(e) => this.props.changeSchadule(e, "left")}>&lt;</button>
-                        <span>{this.props.selectedSchedule.month}/{this.props.selectedSchedule.year}</span>
+                        <span>{Number(this.props.selectedSchedule.month) + 1}/{this.props.selectedSchedule.year}</span>
                         <button onClick={(e) => this.props.changeSchadule(e, "right")}>&gt;</button>
                     </div>
                 </div>
                 <div className="row section-calendar">
-                    <table className="calendar__table">
-                        <thead>
-                            <tr>
-                                <th>pn</th>
-                                <th>wt</th>
-                                <th>śr</th>
-                                <th>czw</th>
-                                <th>pt</th>
-                                <th>sb</th>
-                                <th>nd</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <Week />
-                        </tbody>
-                    </table>
+                    {dayCardsEl ? dayCardsEl : null}
                 </div>
             </>
         )
