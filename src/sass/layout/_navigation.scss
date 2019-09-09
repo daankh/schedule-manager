@@ -1,0 +1,32 @@
+.navigation{
+
+    ul{
+        list-style: none;
+        margin-bottom: 2.4rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        li{
+            
+            .link {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+
+                &:link,
+                &:visited {
+                    padding: .6rem 1.4rem;
+                    color: $color-font;
+                    border-bottom: 2px solid $color-bgc-header;
+                }
+
+                &:hover,
+                &:active {
+                    background-color: $color-bgc-header;
+                }
+
+            }
+        }
+    }
+}

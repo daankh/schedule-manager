@@ -1,0 +1,17 @@
+.header {
+    background-color: $color-bgc-header;
+    color: $color-font-header;
+    height: 8rem;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 4rem;
+        margin-right: 1.6rem;
+    }
+} 

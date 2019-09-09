@@ -1,0 +1,3646 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "admin",
+      "password": "admin",
+      "name": "Prime",
+      "surname": "Admin",
+      "position": "supervisor",
+      "time": 1,
+      "active": true
+    },
+    {
+      "login": "ko@gmail.com",
+      "password": "1234",
+      "name": "Katarzyna",
+      "surname": "Oddziałowa",
+      "position": "supervisor",
+      "time": 1,
+      "id": 2,
+      "active": true
+    },
+    {
+      "login": "kj@gmail.com",
+      "password": "1234",
+      "name": "Katarzyna",
+      "surname": "Jarosz",
+      "position": "regular",
+      "time": 0.75,
+      "id": 3,
+      "active": true
+    },
+    {
+      "login": "annabuch@gmail.com",
+      "password": "1234",
+      "name": "Anna",
+      "surname": "Buch",
+      "position": "regular",
+      "time": 1,
+      "id": 4,
+      "active": true
+    },
+    {
+      "login": "a@a.com",
+      "password": "1234",
+      "name": "aaa",
+      "surname": "aaa",
+      "position": "regular",
+      "time": 1,
+      "active": false,
+      "id": 5
+    },
+    {
+      "login": "zm@wp.pl",
+      "password": "1234",
+      "name": "Zuzanna",
+      "surname": "Miłosz",
+      "position": "regular",
+      "time": 1,
+      "active": true,
+      "id": 6
+    },
+    {
+      "login": "zw@wp.pl",
+      "password": "1234",
+      "name": "Zuzanna",
+      "surname": "Wesoła",
+      "position": "regular",
+      "time": 0.5,
+      "active": true,
+      "id": 7
+    },
+    {
+      "login": "dj@wp.pl",
+      "password": "1234",
+      "name": "Daniela",
+      "surname": "Jelonek",
+      "position": "regular",
+      "time": 0.75,
+      "phone": "",
+      "active": true,
+      "id": 8
+    },
+    {
+      "login": "mzkm@wp.pl",
+      "password": "1234",
+      "name": "Miłosłąwa",
+      "surname": "Ziębek",
+      "position": "regular",
+      "time": 0.75,
+      "phone": "",
+      "active": true,
+      "id": 9
+    },
+    {
+      "login": "ec@gmail.com",
+      "password": "1234",
+      "name": "Ewarda",
+      "surname": "Cudna",
+      "position": "regular",
+      "time": 1,
+      "phone": "",
+      "active": true,
+      "id": 10
+    },
+    {
+      "login": "bj@wp.pl",
+      "password": "1234",
+      "name": "Bogumiła",
+      "surname": "Jarząbek",
+      "position": "regular",
+      "time": 1,
+      "phone": "",
+      "active": true,
+      "id": 11
+    },
+    {
+      "login": "az@gmail.com",
+      "password": "1234",
+      "name": "Anna",
+      "surname": "Ziąb",
+      "position": "regular",
+      "time": 1,
+      "phone": "",
+      "active": true,
+      "id": 12
+    }
+  ],
+  "schedules": [
+    {
+      "month": 9,
+      "year": 2019,
+      "day": [
+        {
+          "day": 1,
+          "employers": {
+            "from7to15": [
+              2
+            ],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 2,
+          "employers": {
+            "from7to15": [
+              2
+            ],
+            "from7to19": [],
+            "from19to7": [
+              3
+            ],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 3,
+          "employers": {
+            "from7to15": [
+              2
+            ],
+            "from7to19": [],
+            "from19to7": [
+              4
+            ],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 4,
+          "employers": {
+            "from7to15": [
+              2
+            ],
+            "from7to19": [],
+            "from19to7": [
+              4
+            ],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 5,
+          "employers": {
+            "from7to15": [
+              2
+            ],
+            "from7to19": [
+              3
+            ],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 6,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [
+              3
+            ],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": [
+              2
+            ]
+          }
+        },
+        {
+          "day": 7,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [
+              3
+            ],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": [
+              2
+            ]
+          }
+        },
+        {
+          "day": 8,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 9,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [
+              3
+            ],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 10,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": [
+              3
+            ]
+          }
+        },
+        {
+          "day": 11,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [
+              3
+            ],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 12,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [
+              3
+            ],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 13,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 14,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 15,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 16,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 17,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 18,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 19,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 20,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 21,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 22,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 23,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 24,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 25,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 26,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 27,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 28,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 29,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 30,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 31,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        }
+      ],
+      "id": 1
+    },
+    {
+      "month": "10",
+      "year": 2019,
+      "day": [
+        {
+          "day": 1,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [
+              2
+            ],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 2,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [
+              4
+            ],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 3,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [
+              4
+            ],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 4,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [
+              4
+            ],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 5,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 6,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [
+              7
+            ],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 7,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 8,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [
+              9
+            ],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 9,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 10,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 11,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 12,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 13,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 14,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 15,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 16,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 17,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 18,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 19,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 20,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 21,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 22,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 23,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 24,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 25,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 26,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 27,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 28,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 29,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        },
+        {
+          "day": 30,
+          "employers": {
+            "from7to15": [],
+            "from7to19": [],
+            "from19to7": [],
+            "leave": [],
+            "sickLeave": [],
+            "childCare": [],
+            "training": []
+          }
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "scheduleUser": [
+    {
+      "id": 1,
+      "month": 9,
+      "year": 2019,
+      "users": [
+        {
+          "userId": 1,
+          "time": 1,
+          "hoursTowork": 174.4166666666666,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 2,
+          "time": 1,
+          "hoursTowork": 121.33333333333321,
+          "day": [
+            {
+              "day": 1,
+              "shift": "R"
+            },
+            {
+              "day": 2,
+              "shift": "R"
+            },
+            {
+              "day": 3,
+              "shift": "R"
+            },
+            {
+              "day": 4,
+              "shift": "R"
+            },
+            {
+              "day": 5,
+              "shift": "R"
+            },
+            {
+              "day": 6,
+              "shift": "Sz"
+            },
+            {
+              "day": 7,
+              "shift": "Sz"
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 3,
+          "time": 0.75,
+          "hoursTowork": 48.062499999999986,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": "N"
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": "D"
+            },
+            {
+              "day": 6,
+              "shift": "N"
+            },
+            {
+              "day": 7,
+              "shift": "N"
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": "D"
+            },
+            {
+              "day": 10,
+              "shift": "Sz"
+            },
+            {
+              "day": 11,
+              "shift": "U"
+            },
+            {
+              "day": 12,
+              "shift": "U"
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 4,
+          "time": 1,
+          "hoursTowork": 150.4166666666666,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": "N"
+            },
+            {
+              "day": 4,
+              "shift": "N"
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 6,
+          "time": 1,
+          "hoursTowork": 174.4166666666666,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 7,
+          "time": 0.5,
+          "hoursTowork": 87.2083333333333,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 8,
+          "time": 0.75,
+          "hoursTowork": 130.81249999999997,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 9,
+          "time": 0.75,
+          "hoursTowork": 130.81249999999997,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 10,
+          "time": 1,
+          "hoursTowork": 174.4166666666666,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 11,
+          "time": 1,
+          "hoursTowork": 174.4166666666666,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            },
+            {
+              "day": 31,
+              "shift": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "month": "10",
+      "year": 2019,
+      "users": [
+        {
+          "userId": 1,
+          "time": 1,
+          "hoursTowork": 166.83333333333326,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 2,
+          "time": 1,
+          "hoursTowork": 154.83333333333326,
+          "day": [
+            {
+              "day": 1,
+              "shift": "D"
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 3,
+          "time": 0.75,
+          "hoursTowork": 125.12499999999996,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 4,
+          "time": 1,
+          "hoursTowork": 144.08333333333323,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": "L4"
+            },
+            {
+              "day": 3,
+              "shift": "L4"
+            },
+            {
+              "day": 4,
+              "shift": "L4"
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 6,
+          "time": 1,
+          "hoursTowork": 166.83333333333326,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 7,
+          "time": 0.5,
+          "hoursTowork": 71.41666666666663,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": "N"
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 8,
+          "time": 0.75,
+          "hoursTowork": 125.12499999999996,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 9,
+          "time": 0.75,
+          "hoursTowork": 117.54166666666663,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": "U"
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 10,
+          "time": 1,
+          "hoursTowork": 166.83333333333326,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 11,
+          "time": 1,
+          "hoursTowork": 166.83333333333326,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        },
+        {
+          "userId": 12,
+          "time": 1,
+          "hoursTowork": 166.83333333333326,
+          "day": [
+            {
+              "day": 1,
+              "shift": ""
+            },
+            {
+              "day": 2,
+              "shift": ""
+            },
+            {
+              "day": 3,
+              "shift": ""
+            },
+            {
+              "day": 4,
+              "shift": ""
+            },
+            {
+              "day": 5,
+              "shift": ""
+            },
+            {
+              "day": 6,
+              "shift": ""
+            },
+            {
+              "day": 7,
+              "shift": ""
+            },
+            {
+              "day": 8,
+              "shift": ""
+            },
+            {
+              "day": 9,
+              "shift": ""
+            },
+            {
+              "day": 10,
+              "shift": ""
+            },
+            {
+              "day": 11,
+              "shift": ""
+            },
+            {
+              "day": 12,
+              "shift": ""
+            },
+            {
+              "day": 13,
+              "shift": ""
+            },
+            {
+              "day": 14,
+              "shift": ""
+            },
+            {
+              "day": 15,
+              "shift": ""
+            },
+            {
+              "day": 16,
+              "shift": ""
+            },
+            {
+              "day": 17,
+              "shift": ""
+            },
+            {
+              "day": 18,
+              "shift": ""
+            },
+            {
+              "day": 19,
+              "shift": ""
+            },
+            {
+              "day": 20,
+              "shift": ""
+            },
+            {
+              "day": 21,
+              "shift": ""
+            },
+            {
+              "day": 22,
+              "shift": ""
+            },
+            {
+              "day": 23,
+              "shift": ""
+            },
+            {
+              "day": 24,
+              "shift": ""
+            },
+            {
+              "day": 25,
+              "shift": ""
+            },
+            {
+              "day": 26,
+              "shift": ""
+            },
+            {
+              "day": 27,
+              "shift": ""
+            },
+            {
+              "day": 28,
+              "shift": ""
+            },
+            {
+              "day": 29,
+              "shift": ""
+            },
+            {
+              "day": 30,
+              "shift": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
