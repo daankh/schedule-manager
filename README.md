@@ -79,7 +79,8 @@ Now JSON server works on http://localhost:3000
 ```
 npm run start
 ```
-to start dev server
+to start dev server.
+
 9. Now you are able to test app functionality.
 To see the supervisor view use:
 ```
