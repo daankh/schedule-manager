@@ -2,10 +2,11 @@
  Schedule management application for nurses.
 
 ## Information
-Project in progress. It is not full-finished yet.
+Project in progress.
+It is not full-finished yet.
 
 ## Live Demo
-Coming soon.You can download this project on your computer and install all npm packages to test this project. More information in section Installation.
+Coming soon. You can download this project on your computer and install all npm packages to test this project. More information in section Installation.
 
 To see the supervisor view use:
 ```
@@ -73,6 +74,7 @@ npm install
 json-server --watch src\js\database\database.json
 ```
 Now JSON server works on http://localhost:3000
+
 8. Then in new terminal write
 ```
 npm run start
